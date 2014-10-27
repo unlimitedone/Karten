@@ -18,7 +18,7 @@ genauer beschrieben. Die angegebene Applikation ist als test.php eingespielt.
 Der Aufbau der Ordnerstruktur der zu erstellenden Web-Applikationen folgt den
 Vorgaben
 
-http://framework.zend.com/manual/1.12/de/project-structure.project.html
+http://framework.zend.com/manual/2.3/en/getting-started-with-zend-studio/skeleton-application.html
 
 des Zend-Frameworks, ohne dieses Framework komplett zu verwenden.
 
