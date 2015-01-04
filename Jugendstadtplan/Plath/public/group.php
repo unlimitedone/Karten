@@ -1,7 +1,7 @@
 <?php
 /**
  * User: Immanuel Plath
- * Date: 18.12.14
+ * Date: 26.12.14
  */
 
 // load app settings
@@ -18,8 +18,7 @@ if ($settings["debug"] == "1") {
 
 // include section
 //=========================
-include_once "../module/helper.php";
-include_once "../module/getDetails.php";
+include_once "../module/getLocationsFromCategories.php";
 
 // ouput settings
 //=========================
@@ -30,27 +29,29 @@ ini_set('default_charset', 'utf-8');
 // param: no params necessary 
 // return: complete webpage
 //=========================
-function outDetails()
+function response()
 {
-	$language = "";
-	$uri = "";
-	$page = "";
-	if (isset($_GET["lang"])) 
+	// Change Content Header
+	header('Content-Type: application/json;charset=utf-8');
+	
+	$response = "";
+	$searchGroup = "";
+	if (isset($_GET["group"])) 
 	{
-		$language = $_GET["lang"];
+		$lang = "de";
+		if (isset($_GET["lang"]))
+		{
+			$lang = $_GET["lang"];
+		}
+		$searchGroup = $_GET["group"];
+		$response = getLocationsByCategory($searchGroup, $lang);
+		$response = json_encode($response);
 	}
-	$language = validateLanguage($language);
-	if (isset($_GET["uri"])) 
-	{
-		$uri = $_GET["uri"];
-		$page = getLocationDetails($uri, $language);
-		//$page = "done";
-	}
-    return $page;
+    return $response;
 }
 
 // print website to user
-echo outDetails();
+echo response();
 
 ?>
 
