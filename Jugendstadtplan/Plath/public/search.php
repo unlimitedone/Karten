@@ -32,7 +32,7 @@ ini_set('default_charset', 'utf-8');
 function response()
 {
 	// gzip All Output
-	ob_start('ob_gzhandler');
+	//ob_start('ob_gzhandler');
 	// Change Content Header
 	header('Content-Type: application/json;charset=utf-8');
 	
@@ -41,7 +41,7 @@ function response()
 	if (isset($_GET["search"])) 
 	{
 		$searchKey = $_GET["search"];
-		$response = searchByUri($searchKey);
+		$response = searchByUri($searchKey, "de");
 		$response = json_encode($response);
 	}
     return $response;
