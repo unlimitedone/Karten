@@ -1,0 +1,25 @@
+#############################
+#Übersicht über die Verbindung der Einträge aus Jugendstadtplan.ttl und Orte.ttl
+
+PREFIX jsp: <http://leipzig-data.de/Data/Jugendstadtplan/> 
+select ?a ?b ?l ?adr
+from <http://leipzig-data.de/Data/Jugendstadtplan/> 
+where {
+  ?a a jsp:Ort .
+optional{  ?a jsp:describes ?b . }
+optional{  ?a rdfs:label ?l . }
+}
+
+#############################
+#Extrahiere alle Einträge aus Orte.ttl, die in Jugendstadtplan.ttl
+#referenziert werden
+
+PREFIX jsp: <http://leipzig-data.de/Data/Jugendstadtplan/> 
+PREFIX ld: <http://leipzig-data.de/Data/Model/> 
+construct { ?b ?c ?d . }
+from <http://leipzig-data.de/Data/Jugendstadtplan/> 
+from <http://leipzig-data.de/Data/Orte/> 
+where {
+  ?a a jsp:Ort; jsp:describes ?b .
+  ?b a ld:Ort; ?c ?d .
+}
