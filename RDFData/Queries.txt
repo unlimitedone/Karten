@@ -16,10 +16,34 @@ optional{  ?a rdfs:label ?l . }
 
 PREFIX jsp: <http://leipzig-data.de/Data/Jugendstadtplan/> 
 PREFIX ld: <http://leipzig-data.de/Data/Model/> 
-construct { ?b ?c ?d . }
+construct { ?b ?c ?d . 
+  ?d geo:lat ?lat; geo:long ?long .
+}
 from <http://leipzig-data.de/Data/Jugendstadtplan/> 
 from <http://leipzig-data.de/Data/Orte/> 
+from <http://leipzig-data.de/Data/Adressen/> 
+from <http://leipzig-data.de/Data/GeoDaten/> 
 where {
   ?a a jsp:Ort; jsp:describes ?b .
   ?b a ld:Ort; ?c ?d .
+optional { ?d a ld:Address; geo:lat ?lat; geo:long ?long . }
+}
+
+#############################
+#Extrahiere alle GeoDaten zu Orten, die in Jugendstadtplan.ttl referenziert
+#werden
+
+PREFIX jsp: <http://leipzig-data.de/Data/Jugendstadtplan/> 
+PREFIX ld: <http://leipzig-data.de/Data/Model/> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> 
+construct { 
+  ?d geo:lat ?lat; geo:long ?long .
+}
+from <http://leipzig-data.de/Data/Jugendstadtplan/> 
+from <http://leipzig-data.de/Data/Orte/> 
+from <http://leipzig-data.de/Data/GeoDaten/> 
+where {
+  ?a a jsp:Ort; jsp:describes ?b .
+  ?b a ld:Ort; ls:hasAddress ?d .
+  ?d geo:lat ?lat; geo:long ?long . 
 }
