@@ -1,0 +1,60 @@
+#############################
+#Übersicht über die Einträge
+
+PREFIX jsp: <http://leipzig-data.de/Data/Jugendstadtplan/> 
+select ?a ?b ?l ?adr
+from <http://leipzig-data.de/Data/Jugendstadtplan/> 
+where {
+  ?a a jsp:Ort .
+optional{  ?a jsp:describes ?b . }
+optional{  ?a rdfs:label ?l . }
+optional{  ?a jsp:hasAddress ?adr . }
+}
+
+#############################
+#Erzeuge Ergänzungen von Orte.ttl für Einträge ohne ld:Ort 
+
+PREFIX jsp: <http://leipzig-data.de/Data/Jugendstadtplan/> 
+PREFIX ld: <http://leipzig-data.de/Data/Model/> 
+construct {
+ ?a a ld:Ort; rdfs:label ?l; ld:hasAddress ?adr .
+}
+from <http://leipzig-data.de/Data/Jugendstadtplan/> 
+where {
+  ?a a jsp:Ort .
+optional{  ?a jsp:describes ?b . }
+optional{  ?a rdfs:label ?l . }
+optional{  ?a jsp:hasAddress ?adr . }
+filter (!bound(?b)) .
+}
+
+#############################
+#Erzeuge Ergänzungen jsp:describes für Einträge ohne ld:Ort 
+
+PREFIX jsp: <http://leipzig-data.de/Data/Jugendstadtplan/> 
+PREFIX ld: <http://leipzig-data.de/Data/Model/> 
+construct {
+ ?a jsp:describes ?a .
+}
+from <http://leipzig-data.de/Data/Jugendstadtplan/> 
+where {
+  ?a a jsp:Ort .
+optional{  ?a jsp:describes ?b . }
+optional{  ?a rdfs:label ?l . }
+optional{  ?a jsp:hasAddress ?adr . }
+filter (!bound(?b)) .
+}
+
+Vergleich Adressen in Orte-Supplement mit denen in Orte
+
+PREFIX jsp: <http://leipzig-data.de/Data/Jugendstadtplan/> 
+PREFIX ld: <http://leipzig-data.de/Data/Model/> 
+select ?a ?b ?c ?l ?adr
+from <http://leipzig-data.de/Data/Jugendstadtplan/> 
+from <http://leipzig-data.de/Data/Orte/> 
+where {
+  ?a a jsp:Ort, jsp:hasAddress ?adr .
+  ?b a ld:Ort, ld:hasAddress ?adr .
+optional{  ?a jsp:describes ?c . }
+optional{  ?a rdfs:label ?l . }
+}
