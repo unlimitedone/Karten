@@ -1,0 +1,49 @@
+11.01., Gräbe: Ein Beispiel test.php in Jugendstadtplan/Plath/public/ sowie
+Mint-Karte/ im Repo eingespielt, mit dem gezeigt wird, wie sich in EasyRDF
+RDF-Graphen aus lokalen RDF-Dateien einlesen lassen. 
+
+------------------------------------------------------------------
+07.01., Gräbe: Einstellen aktualisierter Daten des JSP als JSP.ttl mit
+Verweisen 
+
+jsp:Ortsbeschreibung jsp:describes ld:Ort
+
+von einer jsp:Ortsbeschreibung auf einen ld:Ort aus Orte.ttl, von dort weiter
+der Standardweg zu ld:Adresse und zu ld:GeoDaten.
+
+Im Verzeichnis RDFData des git Repo sind aus den RDF Graphen Orte.ttl und
+GeoDaten.ttl von leipzig-data.de diejenigen Sätze als Teilgraphen extrahiert,
+die im Jugendstadtplan referenziert werden. Damit sind die Daten im
+Repo-Verzeichnis RDFData selbstreferentiell.
+
+------------------------------------------------------------------
+05.01.: Vorstellen des Arbeitsstands im Seminar AST
+
+Herr Plath hat sein Projekt weiter vorangetrieben, Probleme bereitet die
+Einbindung der Datenschicht. Dabei wird auf eine alte json-Datei aus den
+Quellen des alten JSP zurückgegriffen. 
+
+Herr Brandt hat nichts neues zu zeigen.  Es wird vereinbart, dass er sich eine
+lokale Ontowiki-Kopie aufsetzt und erst einmal die Daten der MINT-Broschüre
+2014 in einem RDF-Format aufnimmt, das sich eng an der RDF-Struktur der
+MINT-Broschüre 2012 orientiert.
+
+Nächste Termine:
+* 14.01. 10:00 Uhr Treffen mit Betreuer
+* 26.01. Vorstellen des Arbeitsstands im Seminar AST
+
+------------------------------------------------------------------
+01.12.: Vorstellen des Arbeitsstands im Seminar AST
+
+Herr Plath zeigt eine erste Überarbeitung der Webpräsenz des alten JSP,
+allerdings noch mit einer statischen Seite. 
+
+Herr Brandt präsentiert allgemeine Überlegungen, wie die Ontologie aussehen
+soll, siehe Mint-Karte/doc/Folien-20141201.pdf im Repo (eingespielt am
+4.1.2015) 
+
+Es wird vereinbart, die weiteren Entwicklungen im github-Repo
+https://github.com/unlimitedone/Karten von Herrn Plath zusammenzutragen, das
+ein Fork von github.com:LeipzigData/Karten ist. 
+
+Nächstes Treffen am 05.01., Vorstellung der aktuellen Arbeiten im Seminar AST. 
