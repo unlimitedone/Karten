@@ -1,3 +1,63 @@
+14.01.: Arbeitstreffen
+
+Zunächst stellt Herr Plath seine Arbeiten vor.  Die finale Lösung greift auf
+die spezielle json-Datei public/data/jugendstadtplan.json zu. 
+
+  HGG: Diese Datei habe ich im Nachgang mit dem PHP-Skript public/test.php in
+  eine Turtle-Datei verwandelt und diese unter public/data/jugendstadtplan.ttl
+  in mein Repo hochgeladen.
+
+Mit den RDF-Daten im Verzeichnis RDFData konnte IP wenig anfangen. Sie lassen
+sich zwar auf ähnliche Weise in die Visualisierung einbinden, haben aber eine
+andere Struktur als die alte Datei. Außerdem fehlen eine Reihe von Daten, die
+Extraktion aus den Leipzig Data Quellen ist fehlerhaft. HGG wird das fixieren,
+es werden lokale Dateien Orte.ttl, Adressen.ttl (hier wird auch der rdfs:label
+benötigt) und GeoDaten.ttl aus den Leipzig Data Originaldateien extrahiert,
+die nur die Daten enthalten, die im Jugendstadtplan explizit referenziert
+werden.  Auf der Basis schaut sich IP noch mal optional an, ob die alte
+Datenbasis durch eine neu zusammengestellte ersetzt werden kann.
+
+Aktuell wird der komplette RDF-Graph an vier Stellen eingelesen. Diese
+Funktionalität soll an einer Stelle in einer eigenen php-Datei konzentriert
+werden, wobei der RDF-Graph über $graph->parseFile aus der json-Datei
+eingelesen wird. Die Kapselung der Funktion soll so ausgeführt werden, dass
+die später durch andere Zugriffsmöglichkeiten (andere Quellen, Sparql Query)
+ersetzt werden kann. Im Rest der Anwendung ist der jeweilige RDF-Graph dann
+als Parameter zu übergeben. Dies ist umzusetzen und auch in die Doku
+einzuarbeiten. 
+
+Der Code der Anwendung hat eine Reihe von Stellen aus der alten Anwendung
+übernommen, wo die Navigation im RDF-Graphen über Stringfunktionen erfolgt,
+statt die Graph-Navigation von EasyRDF zu verwenden.  Damit ist die Lösung
+schwer wartbar und schwieirg auf andere Anwendungskontexte (etwa MINT-Orte) zu
+übertragen. Hier wären Beispiele zu studieren, wie üblicherweise die
+Graph-Navigation in EasyRDF erfolgt und dies an den entsprechenden Stellen
+einzubauen. Auch eine deutlichere Trennung zwischen Auswahl von Teildaten und
+den darauf aufbauenden Präsentationsfunktionen wäre wünschenswert.  Das ist
+optional für das Teilprojekt IP, aber für die Visualisierung der MINT-Karte
+(Teilprojekt KB) nicht zu umgehen. 
+
+KB stellt eine erste Version der Datenaufnahme der MINT-Broschüre 2014 vor,
+wobei zunächst die Ortsbeschreibungen aufgenommen wurden. HGG wird dies
+zeitnah durchsehen und an das bei Leipzig Data übliche Format anpassen. KB
+wird in einer weiteren Datei Angebotsschwerpunkte und Projektangebote
+aufnehmen als zwei weitere Klassen (aka Strukturierungseinheiten).  Alle
+Metainformationen (derzeit als "category" abgebildet) sollen Orten und
+Angeboten als Tags (ohne weitere interne Strukturierung) zugeordnet werden, da
+die diesbezügliche Systematik in der Broschüre für die verschiedenen
+Ortsbeschreibungen sehr inkonsistent umgesetzt ist. 
+
+KB wird über den 19.2. hinaus mit dem Praktikum beschäftigt sein und sich erst
+zum Nachprüfungstermin für die SWK-prüfung anmelden. 
+
+Am 26.1. werden ab 13:15 Uhr die Ergebnisse im Arbeitsseminar AST präsentiert.  
+
+Nächster Termin mit Herrn Brandt - 21.1. - geht leider nicht, deshalb
+Vorschlag 20.1. 9:00 Uhr bei mir im Büro. 
+
+IP richtet für HGG einen collaborativen Zugang auf das gemeinsame Repo ein. 
+
+------------------------------------------------------------------
 11.01., Gräbe: Ein Beispiel test.php in Jugendstadtplan/Plath/public/ sowie
 Mint-Karte/ im Repo eingespielt, mit dem gezeigt wird, wie sich in EasyRDF
 RDF-Graphen aus lokalen RDF-Dateien einlesen lassen. 
