@@ -1,0 +1,708 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mint2014: <http://leipzig-data.de/Data/MINT-2014/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ldo: <http://leipzig-data.de/Data/Ort/> .
+@prefix ld: <http://leipzig-data.de/Data/Model/> .
+@prefix ldp: <http://leipzig-data.de/Data/Person/> .
+@prefix ldtag: <http://leipzig-data.de/Data/Tag/> .
+@prefix ldt: <http://leipzig-data.de/Data/Traeger/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://leipzig-data.de/Data/MINT-2014/Angebot>
+    a owl:Class ;
+    rdfs:comment "Das Angebot eines Ortes" ;
+    rdfs:label "Angebot" .
+
+mint2014:Oekoloewe
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04277.Leipzig.Kohrener%2FBurgst%C3%A4dter.Stra%C3%9Fe> ;
+    mint2014:leistungsangebot "Fortbildungsangebote: Naturkunde in der pädagogischen Praxis (für Lehrer/-innen und Erzieher/-innen)", "Wir bieten naturkundliche Führungen, Exkursionen und Projekttage – orientiert an Lehrplaninhalten zu Themen wie Bäume, Wiese, Wald und Wasser – sowie umweltpädagogische Weiterbildungen für Lehrer/-innen und Erzieher/-innen an." ;
+    mint2014:oeffnungszeiten "" ;
+    mint2014:oepnv "" ;
+    dcterms:description "Der Leipziger Auwald bietet ideale Voraussetzungen, um die heimische Tier- und Pflanzenwelt kennen zu lernen und ökologische Zusammenhänge unmittelbar nachzuvollziehen. Auch an Gewässern, in Parks und sogar auf Brachflächen mitten in der Stadt lohnt es sich, genauer hinzuschauen. Bei spannenden und lehrreichen Ausflügen erkunden wir Naturräume in und um Leipzig." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Ökolöwe – Umweltbund Leipzig e.V. Leipzig naturnah" ;
+    foaf:fax "0341 3065179" ;
+    foaf:homepage "www.ökolöwe.de/leipzignaturnah.html" ;
+    foaf:mbox "umweltbildung@oekoloewe.de" ;
+    foaf:phone "0341 3065114" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/%C3%96kol%C3%B6we_–_Umweltbund_Leipzig_eV>
+    mint2014:category "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04277.Leipzig.Bernhard-G%C3%B6ring-Stra%C3%9Fe.152> ;
+    mint2014:leistungsangebot "Ausleihe von Bildungskisten (Umweltbibliothek des Ökolöwen)", "Bürgerberatung zu Naturschutzfragen, zur ökologischen Stadtentwicklung, zum ökologischen Gartenbau", "Durchführung von Umweltbildungsveranstaltungen (Unterrichtseinheiten, Führungen, Exkursionen, Projekttage, Ganztagsangebote) in verschiedenen Bildungseinrichtungen, im Auwald, im Leipziger Stadtgebiet, im Stadtgarten Connewitz und auf Biobauernhöfen", "Schülerpraktika, Ferienjobs für Schüler/-innen", "Vermittlung von Kontakten", "ehrenamtliche Mitarbeit in unseren Projekten" ;
+    mint2014:oeffnungszeiten "Mo bis Fr 9:00 –18:00 Uhr" ;
+    mint2014:oepnv "" ;
+    dcterms:description "Der Ökolöwe – Umweltbund Leipzig e.V. ist ein gemeinnütziger Verein, der im Interesse des Natur- und Umweltschutzes arbeitet. Wir setzen uns für eine umweltgerechte und ökologisch nachhaltige Entwicklung der Region Leipzig ein. Schwerpunkte unseres Handelns sind: umweltpolitische Arbeit, Natur- und Artenschutz, Umweltbildung, Klima und Mobilität, Ökolandbau und gesunde Ernährung. Hier gibt es zahlreiche Verzweigungen zu speziellen Themengebieten. Wir arbeiten öffentlich, informieren und beraten, klären auf und bieten aktive Unterstützung. Die praktische Arbeit der einzelnen Projekte umfasst u. a. die Pflege von Streuobstwiesen, die Gestaltung und Bewirtschaftung des Stadtgarten Connewitz, Führungen und Workshops zu Natur- und Umweltthemen sowie bürgernahe Öffentlichkeitsarbeit. Darüber hinaus nehmen wir mit Stellungnahmen Einfluss auf staatliche und kommunale Entscheidungen im umweltpolitischen Zusammenhang und fördern damit eine umweltverträgliche Entwicklung im Raum Leipzig. Wir verstehen Umweltbildung als wesentliche Grundlage für erfolgreichen Umweltschutz. Ziel unserer Bildungsarbeit ist es, das Bewusstsein für den Wert biologischer Vielfalt und für die Notwendigkeit zu ihrem Erhalt zu schärfen. Wir vermitteln Wissen über unsere Umwelt, zeigen Zusammenhänge auf und reflektieren dabei die Rolle des Menschen. Ausgehend von lokalen Bezügen und der unmittelbaren sinnlichen Erfahrung, öffnen wir auch den Blick für globale Zusammenhänge. So greifen wir im Rahmen unserer Veranstaltungen Problemthemen wie z. B. Überfischung der Weltmeere, Abholzung der Wälder, weltweite Transportwege von Lebensmitteln und Klimawandel auf. Wir nehmen Bezug auf die Alltagserfahrungen der Teilnehmer/-innen und regen zu gegenseitigem Austausch und Diskussionen an. Im Sinne einer Bildung für nachhaltige Entwicklung (BNE) geht es dabei um das „SichBegreifen“ als Teil der Umwelt und das Übernehmen persönlicher Verantwortung." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Ökolöwe – Umweltbund Leipzig e.V." ;
+    foaf:fax "0341 3065179" ;
+    foaf:homepage "www.ökolöwe.de" ;
+    foaf:mbox "umweltbildung@oekoloewe.de" ;
+    foaf:phone "0341 3065185" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/%C3%96kol%C3%B6we_–_Umweltbund_Leipzig_eV_Bio-Bauern>
+    mint2014:category "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04277.Leipzig.Bernhard-G%C3%B6ring-Stra%C3%9Fe.152> ;
+    mint2014:leistungsangebot "Begleitung von Unterrichtseinheiten zu Themen rund um die ökologische Landwirtschaft (3 Bausteine: 1. Vorbereitung in der Schule, 2. Hofbesuch / Exkursion, 3. Aktionstag in der Schule)", "Bereitstellung von Unterrichtsmaterialien", "Fortbildungen für Lehrer/-innen und Erzieher/-innen: rund um den Lernort Bauernhof, Lernort Schulgarten, Thema ökologische Landwirtschaft und gesunde Ernährung", "Ganztagsangebote an Schulen (GTA)", "Projekttage zu Themen rund um die ökologische Landwirtschaft, die auf Höfen / Verarbeitungsbetrieben oder in der Schule stattfinden können" ;
+    mint2014:oeffnungszeiten "im Büro i.d.R. Mo bis Do 9:00 –16:30 Uhr; die Termine für die Umweltbildungsangebote werden individuell abgesprochen." ;
+    mint2014:oepnv "" ;
+    dcterms:description "„Bio-Bauern über die Schulter geschaut – Kinder und Jugendliche entdecken die Landwirtschaft“ ist ein Umweltbildungsprojekt des Ökolöwen – Umweltbund Leipzig e. V. (siehe eigene Darstellung des Vereins im Katalog). Kinder, Jugendliche und Multiplikator/-innen sollen mit ökologischer Landwirtschaft und gesunder Ernährung hautnah in Berührung kommen. Wer einmal Bienenwaben berührt hat, schaut Honiggläser im Laden anders an. Wer schon einmal aus Hafer Flocken gequetscht hat, entdeckt womöglich das Müsli neu. An Projekttagen tauchen wir ein in Stallgeruch, wirbeln in Backstube und Küche, ernten im Garten und nehmen Erde und Eindrücke vom Acker mit nach Hause. Im späteren Verlauf können die Kinder wiederum als Mittler zwischen neuem Wissen und Neugierigen stehen, zum Beispiel bei Aktionstagen und Schulfesten. Für Multiplikator/-innen erarbeiten wir zu ausgewählten Themen Broschüren, die für die Unterrichtsvorbereitung genutzt werden können und führen Fortbildungen für Erzieher/-innen und Lehrer/-innen durch. Den Kindern und Jugendlichen authentische Bilder von ökologischer Landwirtschaft zu vermitteln, steht im Vordergrund des Projektes. Sinnliches Begreifen soll theoretisches Wissen stützen und eine emotionale Verknüpfung mit dem Thema herstellen. Bio-Bauernhöfe sowie Verarbeitende und Händler im Bio-Bereich sind unsere Projektpartner. Den Teilnehmenden wird so der Bezug zwischen dem täglichen Essen auf ihren Tellern und den Umständen von Herstellung und Verarbeitung klar." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "Bio-Bauern über die Schulter geschaut – Kinder und Jugendliche entdecken die Landwirtschaft" ;
+    skos:prefLabel "Ökolöwe – Umweltbund Leipzig e.V. Bio-Bauern" ;
+    foaf:fax "" ;
+    foaf:homepage "www.ökolöwe.de/biobauer.html" ;
+    foaf:mbox "oekovermarktung@oekoloewe.de" ;
+    foaf:phone "0341 3065381" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Allgemeiner_Deutscher_FahrradClub_KV_Leipzig_e_V>
+    mint2014:category "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04107.Leipzig.Peterssteinweg.18> ;
+    mint2014:leistungsangebot "Beratung zur umweltfreundlichen Mobilität", "Kurse und Weiterbildungen für Radfahrende", "Planung und Absicherung von geführten Radtouren", "öffentliche Veranstaltungen wie Vorträge, Podiumsdiskussionen und Radtouren" ;
+    mint2014:oeffnungszeiten "Dienstag bis Donnerstag 14:00 – 18:00 Uhr" ;
+    mint2014:oepnv "Straßenbahn Linien 10, 11 Haltestelle Münzgasse" ;
+    dcterms:description "Der ADFC ist verkehrspolitischer Verein, Verkehrsclub und erbraucherschutzorganisation. Der ADFC setzt sich für die Stärkung des Umweltverbundes (Fahrrad, Fuß, ÖPNV, CarSharing) ein." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "ADFC" ;
+    skos:prefLabel "Allgemeiner Deutscher Fahrrad-Club KV Leipzig e. V." ;
+    foaf:fax "0341 22540314" ;
+    foaf:homepage "www.adfc-leipzig.de" ;
+    foaf:mbox "info@adfc-leipzig.de" ;
+    foaf:phone "0341 22540313" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Anglerverband_Leipzig_e_V>
+    mint2014:category "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04319.Leipzig.Engelsdorfer.Stra%C3%9Fe.377> ;
+    mint2014:leistungsangebot "Einsatzstelle für das Freiwillige Ökologische Jahr", "Entwicklung von Materialien zur Unterstützung von Ganztagsangeboten und Sachkunde- bzw. Biologieunterricht", "Projektunterricht zu den Themen Fische und Gewässer", "Schnupperangelveranstaltungen" ;
+    mint2014:oeffnungszeiten "Di und Do 9:00 –18:00 Uhr (Veranstaltungen nur nach Absprache)" ;
+    mint2014:oepnv "Straßenbahn, Bus, S-Bahn" ;
+    dcterms:description "Der Anglerverband Leipzig e.V. hat 210 Mitgliedsvereine mit zusammen über 11.000 Mitgliedern und unterhält eine Geschäftsstelle in Leipzig. Von hier aus werden die organisatorischen und informativen Aufgaben des Verbandes gesteuert und bewältigt, so auch eine umfangreiche Jugendarbeit." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Anglerverband Leipzig e. V." ;
+    foaf:fax "0341 65235720" ;
+    foaf:homepage "www.anglerverband-leipzig.de" ;
+    foaf:mbox "info@anglerverband-leipzig.de" ;
+    foaf:phone "0341 6523570" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Auwaldstation_Leipzig>
+    mint2014:category "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04159.Leipzig-L%C3%BCtzschena.Schlossweg.11> ;
+    mint2014:leistungsangebot "Beratung zu praktischem Naturschutz, Bestimmung von Tier- und Pflanzenarten", "Bereitstellung eines multimedialen Auwalderlebnispfades (Begleitung und Geräteverleih, kostenlose App für iPhone und Android)", "Bereitstellung von Informationsmaterialien zu Natur- und Umweltthemen", "Einsatzstelle für Freiwilliges Ökologisches Jahr", "Exkursionen und naturpädagogische Programme zur Entspannung oder zur Förderung des Teamgedanken für Erwachsenengruppen", "Fortbildungsangebote, Schülerpraktika", "Kindergeburtstage in der Natur", "Naturerlebnisprogramme als Ferienangebot", "Weiterbildungsangebote für Erzieher/-innen und Lehrer/-innen", "thematisch aufgearbeitete Naturerlebnisprogramme für Schulen, Ausbildungsstätten und Vorschulen, wobei die Vermittlung von fachlichen Inhalten und das praktische Naturerlebnis im ausgeglichenen Verhältnis stehen" ;
+    mint2014:oeffnungszeiten "Informationen unter www.auwaldstation.de" ;
+    mint2014:oepnv "Straßenbahn: Linie 11 (Richtung Schkeuditz) bis zur Haltestelle Lützschena; Fußweg über die Alte Schäferei und den Schlossweg; ca. 10 Minuten; S-Bahn Leipzig-Halle, Haltestelle Lützschena, Fußweg ca. 25 Minuten" ;
+    dcterms:description "Das Umweltbildungszentrum, direkt am Eingang zum Naturschutzgebiet Burgaue und Schlosspark Lützschena gelegen, steht seinen Besuchern täglich offen und bietet zahlreiche Informationen zum Leipziger Auwald, zu Umweltthemen allgemein sowie zum Schlosspark Lützschena. Für Kindergärten, Hortgruppen und Schulklassen aller Altersstufen werden abwechslungsreiche Naturerlebnisprogramme angeboten. Die Mitarbeiter der Auwaldstation unterstützen Bildungseinrichtungen bei der Durchführung von interessanten Projekttagen und Praktika. Aber auch für private Gruppen, Vereine und Firmen besteht die Möglichkeit, an geführten Wanderungen, Workshops und Vorträgen teilzunehmen. Die Auwaldstation ist zudem ein beliebter Ort, um Kindergeburtstage in der Natur zu feiern." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Auwaldstation Leipzig" ;
+    foaf:fax "0341 2537753" ;
+    foaf:homepage "www.auwaldstation.de" ;
+    foaf:mbox "auwaldstation@gmail.com" ;
+    foaf:phone "0341 4621895" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/BergbauTechnikPark_eV>
+    mint2014:category "Berufsorientierung", "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04463.Gro%C3%9Fp%C3%B6sna.Hauptstra%C3%9Fe.19%20> ;
+    mint2014:leistungsangebot "Gruppenführungen sind nach vorheriger Vereinbarung auch außerhalb der normalen Öffnungszeiten möglich. Parkplätze für Busse und PKW sowie ein Spielplatz für Kinder und Gastronomische Versorgung sind vor Ort.", "Informationstafeln mit speziellem Kinderbereich ermöglichen einen individuellen Parkrundgang. Dieser wird durch eine Dauerausstellung in unserem E-Haus ergänzt.", "Schülerpraktika, Ferienjobs für Schüler/-innen" ;
+    mint2014:oeffnungszeiten "Der Park ist in der Regel von Mitte März bis Anfang November geöffnet: Do und Fr 10:00 –17:00 Uhr; Sa, So, Feiertage 10:00 –18:00 Uhr In den Schulferien jeweils Di bis So 10:00 –18:00 Uhr Letzter Einlass jeweils eine Stunde vor Parkschließung. Gruppenführungen sind nach Vereinbarung auch außerhalb der Öffnungszeiten möglich." ;
+    mint2014:oepnv "Nein / Nach Fertigstellung der Schleuse zwischen Markkleeberger und Störmthaler See ca. 25 Minuten Fußweg vom Kanupark Markkleeberg; dieser ist mit einer Bushaltestelle an den ÖPNV angeschlossen" ;
+    dcterms:description "Der Bergbau-Technik-Park präsentiert in einem spannenden Bogen den kompletten (Förder-)Zyklus eines Braunkohlentagebaus: Rückbau der Kulturlandschaft, Vorbereitung des Vorfeldes, Grundwasserabsenkung, Abraum- und Kohlegewinnung, Transport, Abraum-Verkippung und die anschließende Sanierung und Wiedergewinnung neuer Landschaftsräume. Ein spezieller Bereich im Park erinnert an Heimatverlust und das Verschwinden ganzer Dörfer." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Bergbau-Technik-Park e.V." ;
+    foaf:fax "034297 140119" ;
+    foaf:homepage "www.bergbau-technik-park.de" ;
+    foaf:mbox "info@bergbau-technik-park.de" ;
+    foaf:phone "034297 140127" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Berufsakademie_Sachsen_Staatliche_Studienakademie_Leipzig>
+    mint2014:category "Berufsorientierung", "Informatik", "Technik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04207.Leipzig.Sch%C3%B6nauer.Stra%C3%9Fe.113.a> ;
+    mint2014:leistungsangebot "Schülerpraktika", "Wirtschaft: Immobilienwirtschaft, Controlling, Steuerberatung / Wirtschaftsprüfung, Bankwirtschaft", "regelmäßig \"Tag der offenen Tür\", individuelle Veranstaltungen", "verschiedene Studiengänge im Fachbereich Technik: Informatik, Service Engineering" ;
+    mint2014:oeffnungszeiten "Mo bis Do 7:30 – 17:00 Uhr; Fr 7:30 – 15:00 Uhr" ;
+    mint2014:oepnv "Mit Straßenbahn Linie 1 oder 2 bis Haltestelle \"Ratzelstraße\"" ;
+    dcterms:description "Duales Studium – Die Staatliche Studienakademie Leipzig verknüpft mit ihrem Dualen Studium Theorie und Praxis. In 6 Semestern werden solide Fachkenntnisse und betriebspraktische Handlungskompetenz vermittelt. Jedes Semester besteht aus einem Halbsemester in der Studienakademie (Theorie) und einem Halbsemester im Unternehmen (Praxis)." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Berufsakademie Sachsen, Staatliche Studienakademie Leipzig" ;
+    foaf:fax "0341 42743331" ;
+    foaf:homepage "www.ba-leipzig.de" ;
+    foaf:mbox "info@ba-leipzig.de" ;
+    foaf:phone "0341 42743330" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Botanischer_Garten_fuer_Arznei_und_Gewuerzpflanzen_GrosspoesnaOberholz>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04463%20Gro%C3%9Fp%C3%B6sna.St%C3%B6rmthaler.Weg.2> ;
+    mint2014:leistungsangebot "Feste im Jahresverlauf: Kräuter-/Frühlingsfest, Mittsommernachtsfest, Halloween, Adventsfeier", "Fortbildungsangebote: Pflanzenbestimmungskurs, Nachwachsende Rohstoffe", "Führungen und Projekte für Kindergärten und Horteinrichtungen", "Führungen und Projekte für Schulgruppen unter Berücksichtigung des sächsischen Lehrplans", "Kindergeburtstage, Familienfeiern, Betriebsfeiern", "Pflanzenverkauf und Beratung", "Praktika und Ferienjobs für Schüler/-innen", "Thematische Führungen und Workshops für Erwachsene", "Vorträge" ;
+    mint2014:oeffnungszeiten "Mo bis Fr 8:00 –12:00 Uhr (April bis Oktober) Sa und So 10:00 –16:00 Uhr (Mai bis September) und nach Vereinbarung" ;
+    mint2014:oepnv "Zug Leipzig–Geithain, Haltestelle Oberholz, Linie 75 Haltestelle Bahnhof Oberholz oder Pflaumenallee, Linie 690 Haltestelle Pflaumenallee" ;
+    dcterms:description "Der Botanische Garten für Arznei- und Gewürzpflanzen Großpösna-Oberholz wurde 1936 von Leipziger Drogisten als Lehrgarten zur Vermittlung von praktischem Wissen über Arznei- und Gewürzpflanzen angelegt. Auf etwa zwei Hektar werden Heilpflanzen, Gewürzpflanzen, heimische Wildpflanzen, Färberpflanzen und weitere Nutzpflanzen sowie viele bekannte und weniger bekannte Zierpflanzen angebaut und vorgestellt. Im Lehrgarten für Nachwachsende Rohstoffe können sich unsere Besucher/-innen u. a. informieren, welche Pflanzen als Ersatz für Erdöl in der Wirtschaft verwendet werden." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Botanischer Garten für Arznei- und Gewürzpflanzen Großpösna-Oberholz" ;
+    foaf:fax "" ;
+    foaf:homepage "www.botanischer-garten-oberholz.de" ;
+    foaf:mbox "botanischer-garten-oberholz@gmx.de" ;
+    foaf:phone "034297 41249" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/ComputerSpielSchule_Leipzig>
+    mint2014:category "Informatik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04155.Leipzig.Elsbethstra%C3%9Fe.2–4> ;
+    mint2014:leistungsangebot "Aufklärung zu Chancen und Risiken digitaler Spiele", "Medienpädagogisch angeleitetes Spielen mit und für Kinder(n), Jugendliche(n) und deren Eltern sowie Pädagogen/-innen", "Schülerpraktika", "Weiterbildung für Lehrer/-innen, Workshops für Schüler/-innen" ;
+    mint2014:oeffnungszeiten "reguläre Öffnungszeiten:Mo 14:00 – 18:00 Uhr, Di 14:00 – 16:00 Uhr, Do 14:00 – 18:00 UhFerien: Gesonderte Öffnungszeiten (siehe Homepage)" ;
+    mint2014:oepnv "Straßenbahn: Linien 10, 11, 12 bis Haltestelle „G.-Schumann-/ Lützowstraße“; Linie 4 bis Haltestelle „G.-Schumann-/Lindenthaler Straße“. Bus: Linie 90 bis Haltestelle „G.-Schumann-/Lindenthaler Straße“. S-Bahn: S1 und S10 bis Haltestelle „Leipzig Gohlis“ " ;
+    dcterms:description "Ganzjährig ein Ort der Beratung und Begegnung im Rahmen digitaler Spiele. Ausgewählte Workshops und Sonderveranstaltungen für Kinder, Familien und Pädagog/-innen." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "ComputerSpielSchule Leipzig" ;
+    foaf:fax "" ;
+    foaf:homepage "www.computerspielschule-leipzig.de" ;
+    foaf:mbox "info@computerspielschule-leipzig.de" ;
+    foaf:phone "0341 2425976" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Consulting_Innovation_Training_GmbH>
+    mint2014:category "Berufsorientierung", "Informatik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04315.Leipzig.Lutherstra%C3%9Fe.10> ;
+    mint2014:leistungsangebot "Fahrten zu Messen, naturwissenschaftlichen Ausstellungen und Schülerlaboren", "Gespräche mit MINT-Fachleuten", "Grundorientierung: Neigungs- und Begabungstest, Studiengänge kennen lernen", "MINT-Individual: Studienorientierung für Schüler/-innen an Gymnasien ab Klasse 9: individuell,wiederholbar, flexibel", "Probestudientage an Hochschulen der Region", "Unternehmensbesuche und Vermittlung von Praktika" ;
+    mint2014:oeffnungszeiten " Unser Büro ist an Wochentagen von 8:00 bis 16:00 Uhr besetzt" ;
+    mint2014:oepnv "Straßenbahn Linien 1, 3, 8 und Busse 72 / 73 bis zur Haltestelle Friedrich-List-Platz, dann ca. 5 min Fußweg" ;
+    dcterms:description "Die ciT Leipzig GmbH ist eine führende sächsische Bildungseinrichtung in der MedienIT-, kaufmännischen und Logistik-Branche. Wir sind IT- und Bildungsdienstleister fberufliche Weiterbildung und Umschulung in den Bereichen Softwareentwicklung, Netwerktechnik, Datenbanken, IT-Sicherheit, Multimediaanwendungen, kaufmännischQualifizierung und Anwendungssoftware, Lager/Logistik sowie Handel & Verkauf. Unsere Stärke liegt in der modularen Einzel- und Kleingruppenausbildung. Sie könneaus über 400 Modulen unseres gesamten Angebotsspektrums wählen. Die hohe Qulität unserer AZAV-zertifizierten Qualifizierungen sichern wir mit unserem geprüfteQualitätsmanagement nach DIN ISO 9001." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "ciT" ;
+    skos:prefLabel "Consulting Innovation Training GmbH" ;
+    foaf:fax " 0341 68707-124" ;
+    foaf:homepage "www.cit-leipzig.de", "www.mint-individual.de" ;
+    foaf:mbox "mint@mint-individual.de" ;
+    foaf:phone "0341 68707-0" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/ENEDAS_eV>
+    mint2014:category "" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04109.Leipzig.Elsterstra%C3%9Fe.33> ;
+    mint2014:leistungsangebot "Die Förderung der Umweltbildung im Rahmen von eigenen und unterstützten Projekten, wie z. B. naturkundlichen Führungen, Exkursionen, Vortragsreihen oder Ganztagsprojekten, ist eines unserer Haupttätigkeitsfelder. Wir sind bemüht, ein abwechslungsreiches Angebot zu schaffen, welches auch fachfremden Teilnehmer/ -innen den Zugang zu botanischen, zoologischen und ökologischen Fragestellungen ermöglicht. Dabei richtet sich unser Angebot nicht nur an interessierte Bürger/ -innen aus Leipzig und Umgebung, sondern auch an Lehrer/-innen, Kinder und Student/-innen. " ;
+    mint2014:oeffnungszeiten "Unsere Mitglieder sind ehrenamtlich in ihrer Freizeit tätig. Aus diesem Grund sind wir nur bedingt telefonisch zu erreichen. Bei allgemeinen Anfragen nutzen Sie bitte unsere E-Mail-Adresse. " ;
+    mint2014:oepnv "" ;
+    dcterms:description "Wir sind ein gemeinnütziger Verein mit ca. 30 ehrenamtlich aktiven Mitgliedern. Viele davon sind studierte Naturwissenschaftler, die auch beruflich in der Umweltforschung tätig sind. Zu unserem Team gehören auch eine Reihe von Studenten, die bei unserer Arbeit erste Erfahrungen in ihrem Fachgebiet erlangen. Wir wollen: ... durch die Vermittlung unseres ökologischen Wissens das Natur- und Umweltbewusstsein steigern. ... durch eigene und von uns unterstützte Projekte die ökologische Grundlagenforschung fördern. ... durch die aktive Unterstützung geeigneter Maßnahmen den Natur- und Umweltschutz stärken. " ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "ENvironmental EDucation And Science - Verein zur Förderung der Umweltbildung und Umweltforschung" ;
+    skos:prefLabel "ENEDAS e.V." ;
+    foaf:fax "" ;
+    foaf:homepage "www.enedas.de" ;
+    foaf:mbox "info@enedas.de" ;
+    foaf:phone "01577 1822192" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Elektrotechnische_Sammlung_Markkleeberg>
+    mint2014:category "Berufsorientierung", "Naturwissenschaften", "Technik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04416.Markkleeberg.M%C3%B6nchereistra%C3%9Fe.2> ;
+    mint2014:leistungsangebot "Darstellung der beruflichen Möglichkeiten auf dem Gebiet der Elektrotechnik", "Fortbildungsangebote: nach Vereinbarung", "Vorstellung der Technik der Stromversorgung von der Erzeugung über die Übertragung bis zur Anwendung", "praxisnahe Durchführung des Unterrichts zu elektrotechnischen Themen des Lehrplanes mit der Kompetenz unserer Ingenieure und der Vielzahl von Geräten in der ETS" ;
+    mint2014:oeffnungszeiten "jeden letzten Dienstag im Monat von 14:00 – 18:00 Uhr sowie nach Vereinbarung" ;
+    mint2014:oepnv "Straßenbahn: Linie 9 bis Markkleeberg Bahnhof, dann ca. 10 min Fußweg; S-Bahn bis Markkleeberg" ;
+    dcterms:description "Die ETS ist Kernstück einer Bildungs- und Begegnungsstätte zur Geschichte der Elektrotechnik. Sie wird getragen von einem Arbeitskreis des VDE-Bezirksvereins Leipzig/ Halle e. V. " ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "ETS" ;
+    skos:prefLabel "Elektrotechnische Sammlung Markkleeberg" ;
+    foaf:fax "0341 35022264" ;
+    foaf:homepage "www.vde-leipzig-halle.de/sammlung" ;
+    foaf:mbox "vde-leipzig-halle@vde-online.de" ;
+    foaf:phone " 0341 35022265" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/ErfinderKinder>
+    mint2014:category "Mathematik", "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04177.Leipzig.Spittastra%C3%9Fe.16> ;
+    mint2014:leistungsangebot "Ferienangebote, Kindergeburtstage, offene Werkstatt", "Forscher- und Experimentierkurse", "Fortbildungsangebote", "Kreativangebote", "Kurse, Einzelangebote, Projekttage, Projektwochen", "Tüftler- und Erfinderwerkstätten" ;
+    mint2014:oeffnungszeiten "nach Absprache" ;
+    mint2014:oepnv "Straßenbahn: Linien 7 Haltestelle Wielandstraße" ;
+    dcterms:description "Die Erfinderkinder bieten naturwissenschaftliche Frühbildung und kreative Bildungsangebote für Kinder." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "ErfinderKinder" ;
+    foaf:fax "0341 6879080" ;
+    foaf:homepage "www.erfinderkinder.com" ;
+    foaf:mbox "info@erfinderkinder.com" ;
+    foaf:phone "0341 20019395" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/F%C3%B6rderverein_Umweltinformationszentrum_Leipzig_eV>
+    mint2014:category "Berufsorientierung", "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04317.Leipzig.Prager.Stra%C3%9Fe.136> ;
+    mint2014:leistungsangebot "Gemeinnützige Veranstaltungen und Projekte, wo Bürger/-innen (verschiedene Zielgruppen von Klein bis Groß) mitwirken, sich informieren, Umweltbewusstsein für die Region entwickeln und Umweltschutz befördern können.", "Mit der Stadt und dem städtischen UiZ, wissenschaftlichen Einrichtungen und regionalen Partnern wird thematisch dazu eng zusammengearbeitet.", "Weiterbildungsangebote und Aktionen siehe unter www.umwelt-leipzig.de", "Wer an einer Partnerschaft interessiert ist, ist zur Mitwirkung und Förderung gemeinnütziger Projekte willkommen gemäß folgenden Satzungszwecken: Wecken und Wachhalten des Interesses aller Bevölkerungsschichten am umweltgerechten Verhalten, mediengerechte Aufarbeitung und Darstellung von Umweltprojekten und Umweltvorhaben, Durchführung von Ausstellungen, Präsentationen und Bürgerforen zu aktuellen ökologischen Themen, Anleitung und Durchführung von Projekten der Umweltpädagogik, Informationsaustausch zwischen Stadt und Umland, Gewinnung von Spenden für den Zweck des Vereins." ;
+    mint2014:oeffnungszeiten "E-mail an: fvumweltinformationszentrum@web.de oder Nachfrage zum Förderverein im UiZ / Technisches Rathaus, Tel. 0341 1236711" ;
+    mint2014:oepnv "Straßenbahn 12, 15 / Bus 70, 74; Haltestelle: Technisches Rathaus" ;
+    dcterms:description "Der Förderverein am Leipziger Umweltinformationszentrum unterstützt und fördert die Umweltbildungs- und -informationsarbeit der städtischen Einrichtung zum nachhaltigen Umweltschutz im gemeinnützigen Sinne finanziell, sachlich und personell. Weiteres siehe unter www.umwelt-leipzig.de" ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "UiZ" ;
+    skos:prefLabel "Förderverein Umweltinformationszentrum Leipzig e.V." ;
+    foaf:fax "" ;
+    foaf:homepage "www.umwelt-leipzig.de" ;
+    foaf:mbox "fvumweltinformationszentrum@web.de" ;
+    foaf:phone "0177 6590914", "0341 1236830" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Fakult%C3%A4t_f%C3%BCr_Physik_und_Geowissenschaften_der_Universit%C3%A4t_Leipzig>
+    mint2014:category "Berufsorientierung", "Naturwissenschaften", "Technik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04103.Leipzig.Johannisallee.19a>, <http://leipzig-data.de/Data/MINT-2014/04103.Leipzig.Linn%C3%A9stra%C3%9Fe.5> ;
+    mint2014:leistungsangebot "Fortbildungsangebote: Lehrerweiterbildung und Angebote SCHILF", "Sonstige Angebote: Sonntagsvorlesung (Ankündigung über Internet und Schulverteiler), Lange Nacht der Wissenschaften, Inspirata, Experinat, Weihnachtsvorlesung, Kinderuniversität,  Fachkolloquia, Betreuung von Besonderen Lernleistungen (BeLL), Laborbesichtigungen", "Tag der offenen Tür: 1. Donnerstag im Januar" ;
+    mint2014:oeffnungszeiten "nach telefonischer Anfrage" ;
+    mint2014:oepnv "Straßenbahn: Linien 2, 16 (Johannisallee), Linie 15 (Ostplatz); Bus: 60 (Johannisallee)" ;
+    dcterms:description "Institute für Experimentelle und Theoretische Physik, Geographie, Geophysik und Geologie, Meteorologie" ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Fakultät für Physik und Geowissenschaften der Universität Leipzig" ;
+    foaf:fax "" ;
+    foaf:homepage "" ;
+    foaf:mbox "schiele@physik.uni-leipzig.de" ;
+    foaf:phone "0341 9732406" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/GeoWerkstatt_Leipzig_eV>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04103.Leipzig.Johannisallee.19a> ;
+    mint2014:leistungsangebot "Exkursionen, Vorträge, Workshops" ;
+    mint2014:oeffnungszeiten "Unsere Mitglieder sind ehrenamtlich in ihrer Freizeit tätig. Aus diesem Grund sind wir nur bedingt telefonisch zu erreichen. Bei allgemeinen Anfragen nutzen Sie bitte unsere E-Mail-Adresse." ;
+    mint2014:oepnv "" ;
+    dcterms:description "Leipzig – hier sind wir verortet. Die Geowerkstatt. Motivierte Studierende, die mehr wollen, als theoretische Vorlesungen und bunte Beschreibungen aus Büchern, haben sich zusammengetan, um die Geowerkstatt auszufüllen. Als Plattform und eingetragener Verein bieten wir verschiedene Projekte und Vorträge zu praxisorientierter Geographie an. Wir versuchen, die Geographische Forschung herunter zu brechen und begreifbar zu machen. Mit allen Sinnen Geographie erleben und in den Dialog mit der Forschung zu treten, Wissen zu teilen und zu vermitteln, anzuwenden und zu hinterfragen – das ist unser Anspruch!" ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "GeoWerkstatt Leipzig e.V." ;
+    foaf:fax "0341 9732979" ;
+    foaf:homepage "www.geowerkstatt.com" ;
+    foaf:mbox "vorstand@geowerkstatt.com" ;
+    foaf:phone "0341 9738611" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Gerhard.R%C3%B6sl.GmbH>
+    mint2014:category "Berufsorientierung", "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04838.Jesewitz.Zschettgauer.Stra%C3%9Fe.3> ;
+    mint2014:leistungsangebot "Besichtigung des Kompostwerkes (Annahme und Verwiegung des Eingangsmaterials, Zuweisung der Abkippstelle, Bearbeitungsstufen bis hin zum fertigen Kompost)", "Förderung des Umweltgedankens der Kreislaufwirtschaft", "Vorstellung der modernen Bearbeitungstechnik" ;
+    mint2014:oeffnungszeiten "Mo bis Fr (nur nach Anmeldung)" ;
+    mint2014:oepnv "keine direkte Verbindung mit öffentlichen Verkehrsmitteln; Bushaltestelle in Liemehna, ca. 2,5 km bis zum Kompostwerk, Zughaltestelle in Jesewitz, ca. 5 km bis zum Kompostwerk" ;
+    dcterms:description "Kompostwerk Liemehna: Annahme und Verwertung von Bioabfall aus der getrennten Sammlung von Haushalten sowie Garten- und Grünabfall. Herstellung von hochwertigem Kompost und dessen Vermarktung. Fachgerechte Entsorgung der anfallenden Störstoffe." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Gerhard Rösl GmbH" ;
+    foaf:fax "034241 5690028" ;
+    foaf:homepage "www.kompent.de" ;
+    foaf:mbox "Regina.beege@roesl.de" ;
+    foaf:phone "034241 5690041" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Gr%C3%BCner.Ring.Leipzig>
+    mint2014:category "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04451.Borsdorf.Leipziger.Stra%C3%9Fe.6> ;
+    mint2014:leistungsangebot "Ausleihe von Studienmaterial", "Unterstützung bei der Vermittlung von Praktika im Umweltbereich", "Unterstützung spezieller Projekttage mit Material zu den Themen Bergbaufolgelandschaft, Gewässerverbund, Umwelttechnologie-Standorte, Leipziger Neuseenland", "Unterstützung studentischer Exkursionen", "Vermittlung von Kontakten, Recherchen, etc.", "Vorträge zur Arbeit und zu Projekten des Grünen Ringes", "z. B. Information und Beratung zu Schlüsselprojekten des Grünen Ringes Leipzig" ;
+    mint2014:oeffnungszeiten "Mo – Fr 8:00 – 16:30 Uhr oder nach Absprache" ;
+    mint2014:oepnv "S-Bahn Linie S1 bis Borsdorf, RE bis Borsdorf" ;
+    dcterms:description "Der Grüne Ring Leipzig GRL, gegründet 1996, ist eine freiwillige und gleichberechtigte Arbeitsgemeinschaft von Leipzig, 11 Umlandkommunen und 2 Landkreisen. 26 Schlüsselprojekte in Landschaftspflege, Gewässerentwicklung und in der Tourismusentwicklung – wie die Entwicklung der Parthenaue, des Touristischen Gewässerverbundes, von Rad-, Wasser- und Wanderwegen – umreißen die Aufgabe. Mit dem GRL sorgen die Kommunen und ihre Partner – Vereine, Verbände, Bürger, Firmen – für eine abgestimmte regionale Entwicklung über die Stadt- und Gemeindegrenzen hinweg. Ziel ist, dass unsere Region um Leipzig, dass unsere Heimat lebenswert wird und bleibt, Menschen hier bleiben und Gäste gern hierher kommen. Der GRL bewirtschaftet zwei eigene touristische Radwege, den Äußeren und den Inneren Grünen Ring, auch zahlreiche Karten-Schautafeln informieren über spannende regionale Ziele. Dazu gehören auch die Vermittlung der Schlüsselprojekte und die Förderung von Umwelttechnologie und Umweltbildung. 14 interessante Standorte wie die Dölitzer Wassermühle oder der Fisch-Boot-Pass an der Schleuse Connewitz sind mit Informationstafeln versehen. Dazu gibt der GRL unterstützend eine Orientierungsradkarte UMWELT & NATUR für die Zielgruppe Kinder & Familien heraus, auf der diese Standorte beschrieben sind. Diese Karte ist über die Geschäftsstelle zu beziehen." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Grüner Ring Leipzig" ;
+    foaf:fax "034291 20412" ;
+    foaf:homepage "www.facebook.com/grunerring.leipzig", "www.gruenerring-leipzig.de" ;
+    foaf:mbox "geschaeftsstelle@gruenerring-leipzig.de" ;
+    foaf:phone "034291 20412" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Greenpeace.Leipzig>
+    mint2014:category "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04277.Leipzig.Bernhard-G%C3%B6ring-Stra%C3%9Fe.152> ;
+    mint2014:leistungsangebot "Die Greenpeace Gruppe Leipzig bietet verschiedene Vorträge zu den Themen von Greenpeace Deutschland an. Uns selbst stehen leider keine Räumlichkeiten zur Verfügung, die ganze Schulklassen fassen. Wir kommen aber trotzdem gerne an die Schulen, sei es im Rahmen einer Unterrichtsstunde, von Projekttagen oder anderem." ;
+    mint2014:oeffnungszeiten "nach Absprache per E-Mail oder telefonisch" ;
+    mint2014:oepnv "" ;
+    dcterms:description "Greenpeace ist eine international aktive Organisation, die sich für den Schutz der Umwelt einsetzt. Gemeinsam arbeiten wir bei Greenpeace unter anderem daran, den Klimawandel und die Urwaldzerstörung aufzuhalten, aber auch die Verschmutzung der Meere zu stoppen. Greenpeace kämpft gewaltfrei für den Erhalt der Lebensgrundlage von Mensch, Tier und Natur." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Greenpeace Leipzig" ;
+    foaf:fax "" ;
+    foaf:homepage "www.greenpeace.de" ;
+    foaf:mbox "info@leipzig.greenpeace.de" ;
+    foaf:phone "0341 3065184" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/HANDS_on_TECHNOLOGY_eV>
+    mint2014:category "Berufsorientierung", "Informatik", "Mathematik", "Naturwissenschaften", "Technik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04179.Leipzig.Plautstra%C3%9Fe.80> ;
+    mint2014:leistungsangebot "FIRST® LEGO® League (FLL) ist ein Förderprogramm, das Kinder und Jugendliche in einer sportlichen Atmosphäre an Wissenschaft und Technologie heran führen möchte.", "LEGO Mindstorms EV3 Workshops (auf Anfrage)", "Mit FLL werden Softskills geschult und das Interesse an MINT-Fächern geweckt.", "Neben dem Bau und der Programmierung eines LEGO Roboters wird zu einem wissenschaftlichen Thema geforscht." ;
+    mint2014:oeffnungszeiten "nach Absprache per E-Mail oder telefonisch" ;
+    mint2014:oepnv "0341 2461583" ;
+    dcterms:description "HANDS on TECHNOLOGY e. V. ist exklusiver Veranstalter von FIRST LEGO League Zentraleuropa – dem LEGO Roboterwettbewerb für Kinder und Jugendliche im Alter von 10 bis 16 Jahren." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "HANDS on TECHNOLOGY e. V." ;
+    foaf:fax "0341 2461585" ;
+    foaf:homepage "www.first-lego-leauge.org" ;
+    foaf:mbox "info@hands-on-technology.org" ;
+    foaf:phone "" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Handwerkskammer_zu_Leipzig>
+    mint2014:category "Mathematik", "Naturwissenschaften", "Technik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04451.Borsdorf.Steinweg.3> ;
+    mint2014:leistungsangebot "Forschen mit Magneten – Als Lernbegleitung Forschungsprozesse unterstützen", "Forschen mit Sprudelgas – Als Lernbegleitung die sprachliche Bildung unterstützen", "Forschen zu Klängen und Geräuschen – Als Lernbegleitung die Interaktion der Kinder nutzen", "Forschen zu Licht, Farben, Sehen – Als Lernbegleitung Projekte mit Kindern gestalten", "Forschen zu Strom und Energie – Als Lernbegleitung Bildungspartner einbinden", "Forschen zu Wasser in Natur und Technik – Als Lernbegleitung Inklusion gestalten", "Fortbildungsangebote der Stiftung „Haus der kleinen Forscher“", "In unserer technologieorientierten Gesellschaft wächst die Bedeutung der naturwissenschaftlichen und technischen (Früh-)Bildung. Die gemeinnützige Stiftung „Haus der kleinen Forscher“ unterstützt daher pädagogische Fach- und Lehrkräfte dabei, den Forschergeist von Mädchen und Jungen im Kita- und Grundschulalter qualifiziert zu begleiten. Das „Haus der kleinen Forscher“ ist mittlerweile die größte Frühbildungsinitiative Deutschlands. Um die Herausforderung ihrer deutschlandweiten Bildungsinitiative zu meistern, arbeitet die Stiftung „Haus der kleinen Forscher“ mittlerweile eng mit über 230 lokalen Netzwerkpartnern in ganz Deutschland zusammen, die regional Workshops für pädagogische Fach- und Lehrkräfte anbieten. In den Workshops werden spannende Themen mit jeweils einem pädagogischen Schwerpunkt behandelt und gemeinsam erforscht:", "Mathematik in Raum und Form entdecken – Als Lernbegleitung die mathematischen Kompetenzen unterstützen", "Workshop 1: Forschen mit Wasser – Als Lernbegleitung mit Begeisterung und Freude die Welt entdecken", "Workshop 2: Forschen mit Luft – Als Lernbegleitung Dialoge gestalten" ;
+    mint2014:oeffnungszeiten "Mo bis Do 6:30 –15:30 Uhr, Fr 6:30 –13:30 Uhr" ;
+    mint2014:oepnv "Bahnhof Borsdorf" ;
+    dcterms:description "Seit 2009 ist die Handwerkskammer zu Leipzig als Netzwerkpartner der Stiftung „Haus der kleinen Forscher“ aktiv und engagiert sich im sächsischen Netzwerk für die frühe naturwissenschaftliche und technische Frühförderung. Drei- bis zehnjährige Mädchen und Jungen können auch in Sachsen nach dem Konzept der Stiftung Haus der kleinen Forscher bereits in der Kita spielerisch mit alltagsnahen Experimenten ihre Freude an Naturwissenschaften und Technik entdecken." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "Haus der kleinen Forscher" ;
+    skos:prefLabel "Handwerkskammer zu Leipzig" ;
+    foaf:fax "0341 218814552" ;
+    foaf:homepage "http://www.hwk-leipzig.de/3,0,1049.html" ;
+    foaf:mbox "thiele.y@hwk-leipzig.de" ;
+    foaf:phone "034291 30182" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Helmholtz-Zentrum_f%C3%BCr_Umweltforschung_GmbH>
+    mint2014:category "Berufsorientierung", "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04318.Leipzig.Permoserstra%C3%9Fe.15> ;
+    mint2014:leistungsangebot "Ferner betreibt das UFZ für Grundschulen gemeinsam mit der Sächsischen Landesstiftung Natur und Umwelt (LaNU) den KinderUmweltBus für Kinder im Grundschulbereich", "In den wissenschaftlichen Departments des UFZ können sich Schüler/-innen um Praktika, Facharbeiten und BELL bewerben.", "Lehrerfortbildungen", "Lehrerfortbildungen zu Themen aus der Umweltforschung", "Tag der offenen Tür", "Versuchstage für Schüler/-innen der Klassenstufe 9 bis 13 im Schülerlabor" ;
+    mint2014:oeffnungszeiten "Di bis Do ab 9:00 Uhr, nur nach Anmeldung" ;
+    mint2014:oepnv "Straßenbahn: Linie 3 Haltestelle „Permoserstraße / Wissenschaftspark“, 5 Minuten Fußweg" ;
+    dcterms:description "Das Helmholtz-Zentrum für Umweltforschung – UFZ wurde 1991 gegründet und beschäftigt an den Standorten Leipzig, Halle / Saale und Magdeburg ungefähr 1.100 Mitarbeiter. Es erforscht die komplexen Wechselwirkungen zwischen Mensch und Umwelt in genutzten und gestörten Landschaften. Die Wissenschaftler des UFZ entwickeln Konzepte und Verfahren, die helfen sollen, die natürlichen Lebensgrundlagen für nachfolgende Generationen zu sichern." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "UFZ" ;
+    skos:prefLabel "Helmholtz-Zentrum für Umweltforschung GmbH" ;
+    foaf:fax "0341 2351830" ;
+    foaf:homepage "www.ufz-schuelerlabor.de" ;
+    foaf:mbox "schuelerlabor@ufz.de" ;
+    foaf:phone "0341 2351845" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Hochschule.f%C3%BCr.Telekommunikation.Leipzig>
+    mint2014:category "Informatik", "Naturwissenschaften", "Technik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04277.Leipzig.Gustav-Freytag-Stra%C3%9Fe.43–45> ;
+    mint2014:leistungsangebot "Die HfTL bietet ein breites Spektrum an altersgerechten Angeboten aus dem MINT-Bereich an.", "Für die Jüngsten haben wir mit dem Format „Frag den Frosch“ eine spannende Kinder-Uni, in welcher die Teilnehmer/-innen mit lustigen „Mitmach-Experimenten“ die Möglichkeit haben, neues Wissen zu erwerben.", "Mit unseren Studien-Infotagen sprechen wir Schüler/-innen ab Klassenstufe 9 an. Neben Wissenswertem zum Bachelor und Master erleben die Teilnehmer/-innen hier den Studienalltag „live“ und können sich mit Studierenden austauschen.", "Tag der offenen Tür", "Weiterbildungsangebote der HfTL finden Sie unter www.hft-leipzig.de/aw." ;
+    mint2014:oeffnungszeiten "Mo bis Fr von 7:30 –17:00 Uhr Veranstaltungen am Wochenende bedürfen einer gesonderten Absprache" ;
+    mint2014:oepnv "Straßenbahn: Linie 9 (Markkleeberg-West), Linie 10 (Lößnig), Linie 11 (Markkleeberg-Ost) bis Haltestelle HTWK oder Connewitzer Kreuz" ;
+    dcterms:description "Die Hochschule für Telekommunikation Leipzig (HfTL) ist eine durch das Sächsische Staatsministerium für Wissenschaft und Kunst anerkannte Hochschule in Trägerschaft der HfTL Trägergesellschaft mbH – einer 100 % Beteiligung der Deutschen Telekom. Mit den angebotenen Studienformen Direkt, Dual und Berufsbegleitend setzt die HfTL ihr Konzept des lebenslangen Lernens in die akademische Ausbildung um." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "HfTL" ;
+    skos:prefLabel "Hochschule für Telekommunikation Leipzig" ;
+    foaf:fax "0341 3062119" ;
+    foaf:homepage "www.hft-leipzig.de" ;
+    foaf:mbox "pr@hft-leipzig.de" ;
+    foaf:phone "0341 3062120" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/INSPIRATA>
+    mint2014:category "Berufsorientierung", "Mathematik", "Naturwissenschaften", "Technik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04103.Leipzig.Deutscher.Platz.4,.Eingang.G> ;
+    mint2014:leistungsangebot "Kindergeburtstagsbetreuung (max. 12 Kinder) – Betreuungen mit anregenden Experimenten und mathematischen Spielen; Alter: 5–13 Jahre; Kosten: ab 60 €, je nach Aufwand und Absprache; Veranstaltungsort: INSPIRATA e. V.", "Mitmachmuseum mit mathematisch-naturwissenschaftlichen Exponaten und fachlicher Betreuung", "Schülerpraktika", "Thematische Führungen", "Thematische Weiterbildungen für Pädagogen/-innen und Erzieher/-innen", "Vorträge mit naturwissenschaftlichen und pädagogischen Inhalten", "Workshops zu mathematisch-naturwissenschaftlichen (Unterrichts-)Themen", "schulinterne Lehrerfortbildung (SCHILF), Pädagogischer Tag; Angebote für Multiplikatoren; andere Angebote gern auf Anfrage" ;
+    mint2014:oeffnungszeiten "für Gruppen (nach Anmeldung): jeden Mo bis Fr (außer an Feiertagen) jeweils 8:30 – 10:00 Uhr, 10:30 – 12:00 Uhr, 12:30 – 14:00 Uhr und 14:30 – 16:00 Uhr. Einzelbesucher / Familien: jeden Samstag 12:00 – 18:00 Uhr sowie Ferien-Angebote und individuelle Besuchszeiten nach Abstimmung" ;
+    mint2014:oepnv "S1 / S3 Haltestelle „Völkerschlachtdenkmal“, S2 / S4 / S5 Haltestelle „MDR“; Tram 2 / Tram 16 Haltestelle „Deutsche Nationalbibliothek“, Tram 12 / Tram 15 Haltestelle „Technisches Rathaus“; Bus 70 Haltestelle „Altes Messegelände“, Bus 74 Haltestelle „Deutsche Nationalbibliothek“. Ausreichend Parkmöglichkeiten in der Nähe (Ph.-Rosental-Straße u. a.)" ;
+    dcterms:description "Die INSPIRATA fördert die mathematisch-naturwissenschaftliche Bildung für alle Interessierten, hauptsächlich für Vorschulgruppen und Schulklassen. Kern ist eine Sammlung von Exponaten, an Hand derer die Besucher/-innen Phänomene und Naturgesetze erkunden, erfahren und verstehen können. Außerdem werden lehrplanbezogene Workshops und spezielle Führungen angeboten. Charakteristisch ist ein intensives pädagogisches Betreuungssystem." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "Zentrum für mathematisch-naturwissenschaftliche Bildung e.V." ;
+    skos:prefLabel "INSPIRATA" ;
+    foaf:fax "" ;
+    foaf:homepage "www.inspirata.de" ;
+    foaf:mbox "kontakt@inspirata.de" ;
+    foaf:phone "0341 1259757" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Industrie-.und.Handelskammer.zu.Leipzig>
+    mint2014:category "Berufsorientierung", "Informatik", "Mathematik", "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04109.Leipzig.Goerdelerring.5> ;
+    mint2014:leistungsangebot "Fortbildungsangebote: Umweltfachveranstaltungen laut Online-Veranstaltungskalender der IHK", "Hintergrundinformationen für den individuellen praktischen Nutzen", "Informationsveranstaltung zur Kreislaufwirtschaft auf der Grundlage gesetzlicher Regeln und der technisch möglichen Umsetzung am Beispiel von kurzlebigen Produkten, wie zum Beispiel: Verpackungen, Batterien, Autos, Elektrogeräte", "Online-Plattform „tecnopedia“" ;
+    mint2014:oeffnungszeiten "Mo bis Do von 9:00 –18:00 Uhr, Fr 9:00 –16:00 Uhr" ;
+    mint2014:oepnv "Straßenbahn bis Haltestelle „Goerdelerring“" ;
+    dcterms:description "Als zuständige Stelle der Aus- und Weiterbildung im dualen System beteiligt sich die IHK zu Leipzig aktiv an bildungspolitischen Themen zur Sicherung des Fachkräftebedarfs in der Region. Wir betreuen Projekte in den Bereichen der allgemeinbildenden Schulbildung, beruflichen Bildung, Hochschulbildung sowie Weiterbildung. Wir wirken mit in bundesweiten sowie regionalen Arbeitskreisen und Gremien. Wir initiieren und unterstützen Maßnahmen zur Berufs- und Studienorientierung. Wir nehmen Stellung zu bildungspolitischen Themen. Als Interessenvertreter der Wirtschaft informiert die IHK zu Leipzig auch zu Fragen der Abfallvermeidung/-verwertung zur Ressourceneffizienz und Umweltmanagementsystemen und führt das Register zur Vollständigkeitserklärung nach Verpackungsverordnung." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Industrie- und Handelskammer zu Leipzig" ;
+    foaf:fax "0341 12671426" ;
+    foaf:homepage "www.leipzig.ihk.de" ;
+    foaf:mbox "tanzmann@leipzig.ihk.de" ;
+    foaf:phone "0341 12671354" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/KinderUmweltBus>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04318.Leipzig.Permoserstra%C3%9Fe.15> ;
+    mint2014:leistungsangebot "Das UFZ betreibt gemeinsam mit der Sächsischen Landesstiftung Natur und Umwelt (LaNU) für Grundschulen und Kitas den KinderUmweltBus. In diesem Projekt lernen Kinder, Fragen zu ihrer eigenen (Um-)Welt zu formulieren. Im Experiment können diese und weitere faszinierende Alltagsphänomene erlebbar gemacht werden. Das Heranführen an das praktische Arbeiten und der eigene Erkenntnisgewinn stehen dabei im Vordergrund. Die Arbeit erfolgt je nach Angebot im Freien oder im Klassenraum." ;
+    mint2014:oeffnungszeiten "nach Terminvergabe" ;
+    mint2014:oepnv "Besuch in den Einrichtungen" ;
+    dcterms:description "Das Helmholtz-Zentrum für Umweltforschung – UFZ wurde 1991 gegründet und beschäftigt an den Standorten Leipzig, Halle/Saale und Magdeburg ungefähr 1.100 Mitarbeiter/-innen. Es erforscht die komplexen Wechselwirkungen zwischen Mensch und Umwelt in genutzten und gestörten Landschaften. Die Wissenschaftler/-innen des UFZ entwickeln Konzepte und Verfahren, die helfen sollen, die natürlichen Lebensgrundlagen für nachfolgende Generationen zu sichern." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "Helmholtz-Zentrum für Umweltforschung – UFZ" ;
+    skos:prefLabel "KinderUmweltBus" ;
+    foaf:fax "0341 2351830" ;
+    foaf:homepage "www.kinderumweltbus.de" ;
+    foaf:mbox "kinderumweltbus@ufz.de" ;
+    foaf:phone "0341 2351868" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Kultur-_und_Umweltzentrum_eV_%C3%96koschule>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04416.Markkleeberg.Am.Festanger.8> ;
+    mint2014:leistungsangebot "Die Ökoschule und das „Grüne Klassenzimmer“ am agra-Park ermöglichen die aktive Auseinandersetzung mit der Natur, bieten „Unterricht im Grünen“, Projekttage für alle Altersstufen und Schultypen.", "Schülerpraktika, Studentenpraktika, FÖJ", "Unsere Angebote sind Orientierungshilfen – wir führen Projekte, Umwelttage, Schulund Klassenfeste, Kindergeburtstage, Ferienfreizeiten durch." ;
+    mint2014:oeffnungszeiten "Mo bis Fr 8:00 – 15:00 Uhr und nach Vereinbarung" ;
+    mint2014:oepnv "Straßenbahn Linie 9, Haltestelle Markkleeberg-Parkstraße; Busse 107, 108; S-Bahn Linien 2, 4, 5" ;
+    dcterms:description "Das Umweltzentrum ist Teil des Kultur- und Umweltzentrum e. V., ist Zentrum der außerschulischen Jugendbildung, der Erwachsenenbildung und der offenen Kinder- und Jugendarbeit." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Kultur- und Umweltzentrum e.V. Ökoschule" ;
+    foaf:fax "0341 3504769" ;
+    foaf:homepage "www.kultur-und-umweltzentrum.de" ;
+    foaf:mbox "oekoschule-markkleeberg@gmx.de" ;
+    foaf:phone "0341 3504766" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Leipziger_Sch%C3%BClergesellschaft_f%C3%BCr_Mathematik>
+    mint2014:category "Mathematik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04009.Leipzig.c%2FoMathematisches.Institut.der.Universit%C3%A4t.Leipzig> ;
+    mint2014:leistungsangebot "Präsenz- und Korrespondenzzirkel", "Stadtrallyes", "Wochenendseminare und Winterschulen", "jährlich ein Mathecamp in den Sommerferien", "„Aufgabe des Monats“" ;
+    mint2014:oeffnungszeiten "nach Vereinbarung" ;
+    mint2014:oepnv "Straßenbahnen Haltestelle Augustusplatz" ;
+    dcterms:description "Die Leipziger Schülergesellschaft für Mathematik (LSGM) ist ein Zusammenschluss engagierter Einzelpersonen zur Förderung mathematischer Nachwuchstalente. Wir geben Schüler/-innen der Klassen 5 bis 12, denen Mathematik Spaß bereitet, die Möglichkeit, mit Gleichgesinnten und unter Anleitung erfahrener Fachleute auf Entdeckungsreise in die Gefilde der „Mutter aller Wissenschaften“ zu gehen und ihre mathematischen Kenntnisse zu vertiefen." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Leipziger Schülergesellschaft für Mathematik" ;
+    foaf:fax "" ;
+    foaf:homepage "http://www.lsgm.de" ;
+    foaf:mbox "info@lsgm.de" ;
+    foaf:phone "0341 9732248" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Max-Planck-Institut_f%C3%BCr_Mathematik_in_den_Naturwissenschaften>
+    mint2014:category "Berufsorientierung", "Mathematik", "Naturwissenschaften" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04103.Leipzig.Inselstra%C3%9Fe.22> ;
+    mint2014:leistungsangebot "Die Vorträge finden wahlweise am Institut oder an den Schulen statt.", "Die Wissenschaftler/-innen des Instituts geben Einblicke in aktuelle mathematische und naturwissenschaftliche Forschungsthemen.", "Schülerprojekttage / Schülerpraktika nach individueller Absprache", "Vorträge für Schüler/-innen an Gymnasien" ;
+    mint2014:oeffnungszeiten "keine allgemeinen Öffnungszeiten; Erreichbarkeit der Rezeption des Instituts: Mo bis Do 8:00 –16:30 Uhr, Fr 8:00 –15:30 Uhr" ;
+    mint2014:oepnv "ab Hauptbahnhof bis Haltestelle „Friedrich-List-Platz“, dann 5 min. Fußweg: Straßenbahn Linie 1, Richtung Schönefeld / Mockau, Post; Linie 3, Richtung Sommerfeld / Taucha; Linie 8, Richtung Paunsdorf-Nord; Bus Linien 72 und 73, Richtung Paunsdorf /Sommerfeld / Baalsdorf. Von der Haltestelle „Augustusplatz“ ca. 10 min. Fußweg, vom / zum Hauptbahnhof ca. 10 min. Fußweg." ;
+    dcterms:description "Die interdisziplinäre Zusammenarbeit von Mathematik und Naturwissenschaften bildet den Kernpunkt der Arbeit des 1996 gegründeten Max-Planck-Instituts. Die Wissenschaftler/-innen beschäftigten sich mit einem breiten Spektrum an Fragestellungen der reinen und angewandten Mathematik und stellen sich den mathematischen Herausforderungen, die durch theoretische Fragestellungen in den Natur- und Ingenieurwissenschaften entstehen. Ziel ist es, mathematische Denkweisen und Methoden in neuartiger Weise in verschiedene Anwendungsbereiche in den Naturwissenschaften zu integrieren." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Max-Planck-Institut für Mathematik in den Naturwissenschaften" ;
+    foaf:fax "0341 9959658" ;
+    foaf:homepage "www.mis.mpg.de" ;
+    foaf:mbox "jgregor@mis.mpg.de" ;
+    foaf:phone "" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Naturkundemuseum.Leipzig>
+    mint2014:category "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04105.Leipzig.Lortzingstra%C3%9Fe.3> ;
+    mint2014:leistungsangebot "Auwald als spezifischer Leipziger Lebensraum", "Baugesteine in der Leipziger Innenstadt", "Fortbildungsangebote: auf Wunsch für Lehrpersonal viele biologische oder geologische Themen", "Fossilien, Braunkohle, Eiszeit, Quartär, Tertiär", "Schülerpraktika", "Teilnahme an regionalen und überregionalen Aktionen, wie Museumsnacht Halle/Leipzig, Internationaler Museumstag, Tag des Offenen Denkmals, Naturschutzwoche, Leipziger Umwelttage uvm.", "Veranstaltungen, wie z. B. Vorträge, Lesungen, Vernissagen, Finissagen, Museum im Krankenhaus, Spiel- und Infostände, Naturkundliche Paddeltouren, Bienenfest", "heimische vielfältige Tierwelt, Herbarbelege und botanische Exkursionen", "zoologische Raritäten weltweit" ;
+    mint2014:oeffnungszeiten " Mo geschlossen, Di bis Do 9:00 – 16:30 Uhr Winterzeit, Di bis Do 9:00 – 18:00 Uhr Sommerzeit, Fr 9:00 – 13:00 Uhr, Sa/So 10:00 – 16:30 Uhr" ;
+    mint2014:oepnv "Straßenbahn Linien 1, 3, 4, 7, 9, 12, 14, 15: Haltestelle Goerdelerring" ;
+    dcterms:description "10.000 Jahre NaturKulturGeschichte der Region Leipzig in zoologischen, botanischen, geologischen und archäologischen Sammlungen zeigen Wechselwirkungen zwischen der Auenlandschaft mit ihren Flüssen, Wäldern und Wiesen und einer artenreichen Natur- und Kulturlandschaft. Mitarbeiter/-innen und Museumspädagog/-innen vermitteln insbesondere Kindern und Jugendlichen umfangreiche Kenntnisse über Natur und Umwelt." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Naturkundemuseum Leipzig" ;
+    foaf:fax "0341 9822122" ;
+    foaf:homepage "www.naturkundemuseum.leipzig.de" ;
+    foaf:mbox "naturkundemuseum@leipzig.de" ;
+    foaf:phone "0341 982210" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Phyllodrom>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04158.Leipzig.Delitzscher.Landstra%C3%9Fe.38> ;
+    mint2014:leistungsangebot "Arbeitsgemeinschaften für verschiedene Altersgruppen: „Dschungelkids“ und „Regenwald-AG“", "Begabungsförderung und Kompetenzentwicklung", "Ferienpassveranstaltungen und Ferienangebote für Familien und (Hort-)Gruppen", "Fortbildungsangebote", "Führungen für Kindergärten, Schulklassen, Familien, Gruppen sowie erlebnis- und handlungsorientierte Veranstaltungen", "Ganztagsangebote", "Geburtstagsveranstaltungen", "Museumspädagogische Veranstaltungen mit unterschiedlichen Formaten, Inhalten und Zielgruppen:", "Projekte im Rahmen „Kultur macht STARK – Bündnisse für Bildung“", "Präsentationen und Ausstellungen", "Schulveranstaltungen / Projektwochen", "Schülerpraktika", "Tag der offenen Tür (27.09.2014)", "Workshops", "lehrplanspezifische außerschulische Lernangebote" ;
+    mint2014:oeffnungszeiten "" ;
+    mint2014:oepnv "Straßenbahn Linie 16 (bis Dachauer Straße); S-Bahn Linien S1, S2, S5, S5X (Bahnhof Messe); Bus 87 (bis Dachauer Straße)" ;
+    dcterms:description "Das Phyllodrom – Regenwaldmuseum Leipzig ist ein Lernort für natur- und völkerkundliche Bildung in Leipzig mit Fokus auf das Ökosystem tropischer Regenwald. In einem spezialisierten Museum wird den Besucher/-innen mit verschiedenen Präsentationsformen und unterschiedlichen Aktivitäten ein abwechslungsreiches Erlebnis geboten, das nachhaltig zum Weiterdenken anregen soll. Wechselnde Ausstellungen behandeln vielfältige Themen aus den Bereichen Zoologie, Botanik, Völkerkunde, Ökologie sowie Bedeutung und Bedrohung der Regenwälder. In die Ausstellungsgestaltung werden lebende Tiere und Pflanzen, Modelle oder Originalpräparate sowie Kult- und Gebrauchsgegenstände integriert. Um die Erforschung des Ökosystems Regenwald zu unterstützen, arbeitet die Einrichtung mit Wissenschaftler/-innen unterschiedlicher Fachrichtungen sowie mit Institutionen und Vereinen im In- und Ausland zusammen. Dabei beteiligt sich der Phyllodrom e.V. auch aktiv an Maßnahmen des Natur- und Umweltschutzes, wie beispielsweise an Wiederaufforstungs- und Auswilderungsprojekten in Indonesien und Papua Neuguinea. Natur- und Umweltbildung für Menschen jeden Alters stellt im Regenwaldmuseum ein zentrales Arbeits- und Aufgabenfeld dar, sodass fortlaufend vielfältige museumspädagogische Veranstaltungen angeboten und durchgeführt werden." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "Museum und Institut für Regenwaldökologie e.V." ;
+    skos:prefLabel "Phyllodrom" ;
+    foaf:fax "" ;
+    foaf:homepage "www.Phyllodrom.de" ;
+    foaf:mbox "info@Phyllodrom.de" ;
+    foaf:phone "0341 5257757" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Schola_Oecologica>
+    mint2014:category "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04463.Gro%C3%9Fp%C3%B6sna.Rittergutshof.Nr.7> ;
+    mint2014:leistungsangebot "Bereitstellung zur Selbstdurchführung: Milch zur Butter und Getreideprojekt", "Exkursionen zu Themen wie: Wiese, Erdforscher, Steine, Teich, Wald", "Kreativangebote: Papierwerkstatt, Filzen, Korbflechten, Töpfern", "mit allen Sinnen: „Grünschuh“-Projekt, Freddy Fledermaus, Schnecke Berta, Steinzeit, Lehmbau", "Übernachtung / Vollpension / Projektbausteine (Bausteine nur in Zusammenhang eines Aufenthaltes mit mindestens 2 Nächten buchbar! Ausnahme: Weihnachtswerkstatt)" ;
+    mint2014:oeffnungszeiten "ganzjährig" ;
+    mint2014:oepnv "Buslinien 141, 276, 145, Haltestelle Muckern (Großpösna)" ;
+    dcterms:description "Mitten in Dreiskau-Muckern, im liebevoll restaurierten Rittergutshof, betreibt der Verein „Schola Oecologica Sozio-ökologisches Zentrum e.V.“ seit 10 Jahren das OEKOLA. In familiärer, angenehmer Atmosphäre bietet das Haus Platz für 60 Besucher, kann also gleichzeitig 2 Schulklassen beherbergen. Das vielseitige Programm richtet sich vorrangig an Grundschulklassen. Die Projektbausteine können flexibel und offen, draußen oder drinnen, an erwanderbaren Lernorten, verknüpft mit Exkursionen, Kunstprojekten oder Werkstattarbeit durchgeführt werden." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Schola Oecologica" ;
+    foaf:fax "034206 68975" ;
+    foaf:homepage "www.oekola7.de" ;
+    foaf:mbox "oekola@web.de" ;
+    foaf:phone "034206 68974" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Schulbiologiezentrum>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04275.Leipzig.Schleu%C3%9Figer.Weg.1> ;
+    mint2014:leistungsangebot "Osterbasteln, Frühlingsspaziergänge, Sommerfest, Naturerlebnistage, Kürbisfest, Adventsbasteln", "Schülerpraktika", "Tag der offenen Tür", "Unterricht, Projekttage, Hortnachmittage, sinnvolle Feriengestaltung, Exkursionen, Kreativangebote, Sachkunde" ;
+    mint2014:oeffnungszeiten "Mo bis Do 08:00 –16:00 Uhr (ab 1. Mai bis 17:00 Uhr), Fr 08:00 –12:00 Uhr" ;
+    mint2014:oepnv "Bus Linie 60" ;
+    dcterms:description "Außerschulischer Lernort für lehrplanbezogenen Unterricht in den Fächern Biologie, Sach- und Heimatkunde. Nutzbar für Schüler/-innen der Klassen 1 bis 12." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Schulbiologiezentrum" ;
+    foaf:fax "0341 2253768" ;
+    foaf:homepage "www.schulbiologiezentrum-leipzig.de" ;
+    foaf:mbox "rehm@schulbiologiezentrum-leipzig.de" ;
+    foaf:phone "0341 3915102" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Stadt.Name.Land>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/> ;
+    mint2014:leistungsangebot "Schülerpraktika", "als Weiterbildung für Lehrer- und Erzieher/-innen möglich" ;
+    mint2014:oeffnungszeiten "nach Bedarf" ;
+    mint2014:oepnv "" ;
+    dcterms:description "Stadt.Name.Land bietet Stadt- und Museumsführungen speziell für Kinder und Jugendliche an. Mit Stadt.Name.Land können Kinder und Jugendliche Leipzig entdecken – vom Vorschulalter bis zum Ende der Schulzeit. Und wie? Wir haben besondere Stadtführungen, Touren durch Museen, Parks und besonders wichtige Gebäude in Leipzig speziell für Kinder und Jugendliche entwickelt. Diese Touren sind auf das Vorwissen der Altersgruppe zugeschnitten – in Bezug auf Thema, Dauer, Art der Vermittlung und Inhalte. So wird niemand überfordert oder gelangweilt – unsere Stadtführungen sind für Kinder und Jugendliche immer spannend, kurzweilig und informativ!" ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Stadt.Name.Land" ;
+    foaf:fax "0341 3039113" ;
+    foaf:homepage "www.stadtnameland.de" ;
+    foaf:mbox "post@stadtnameland.de" ;
+    foaf:phone "0341 3065412" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Stadtgarten_Connewitz>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04277.Leipzig.Kohrener%2FBurgst%C3%A4dter.Stra%C3%9Fe> ;
+    mint2014:leistungsangebot "Brötchen im Lehmofen backen,", "Ehrenamtliche Mitarbeit im Stadtgarten Connewitz", "Fortbildungsangebot für Lehrer- und Erzieher/-innen: Naturkunde in der pädagogischen Praxis", "Kräuter, Obst und Gemüse kennenlernen und ernten,", "Mit Becherlupen in die Welt der Insekten eintauchen,", "Schülerpraktika", "gemeinsam leckere und gesunde Speisen zubereiten,", "und jede Menge Spaß beim Bau eines Räuberlagers – das alles ist möglich im Stadtgarten Connewitz." ;
+    mint2014:oeffnungszeiten "Saison vom 1. April bis 31. Oktober, Mo bis Fr 9:00 –18:00 Uhr, So 15:00 –18:00 Uhr, Im Oktober jeweils nur bis 17:00 Uhr geöffnet. An Samstagen und Feiertagen geschlossen." ;
+    mint2014:oepnv "Straßenbahnlinie 11 (Richtung Markkleeberg), Haltestelle: Hildebrandstraße; S-Bahn bis Bhf. Connewitz" ;
+    dcterms:description "" ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "Ökolöwe – Umweltbund Leipzig e. V." ;
+    skos:prefLabel "Stadtgarten Connewitz" ;
+    foaf:fax "0341 3065179" ;
+    foaf:homepage "www.ökolöwe.de/stadtgarten.html" ;
+    foaf:mbox "stadtgarten@oekoloewe.de" ;
+    foaf:phone "0341 3065114" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Stiftung.Wilderness.International>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04318.Leipzig.Permoserstra%C3%9Fe.15> ;
+    mint2014:leistungsangebot "Aktionstage und Projekte zum temperierten Regenwald in Kindergärten", "Durchführung von Stipendiatenreisen an Kanadas Westküste mit individuellen Projektarbeiten zu Natur und Kultur vor Ort (u. a. Kooperation mit First Nations)", "Multimediavorträge für Schüler/-innen zum temperierten Regenwald", "Multimediavorträge für die interessierte Öffentlichkeit", "Organisation und Durchführung von Sponsorenläufen (zugunsten von Wildnisgebieten, z. B. des temperierten Regenwaldes Westkanadas und von Umweltbildungsprojekten der teilnehmenden Schulen)", "Praktika, Freiwilliges Ökologisches Jahr", "Unterstützung von regionalen Umweltprojekten von Schulen und Kindergärten" ;
+    mint2014:oeffnungszeiten "Mo bis Fr 9:00 –17:00 Uhr; telefonische Absprache wird empfohlen" ;
+    mint2014:oepnv "" ;
+    dcterms:description "Wilderness International engagiert sich für intakte Natur, denn die von Menschen wenig beeinflussten Naturgebiete werden immer seltener und damit zu unersetzlichen Schätzen für nachfolgende Generationen. Die Stiftung hilft, Wildnisgebiete zu bewahren und weitreichende Umweltschädigungen aufzuhalten, wobei die Bewohner/-innen und Institutionen der gefährdeten Gebiete eingebunden werden. So werden z. B. Natur erhaltende Nutzungskonzepte für Wildnisgebiete entwickelt, vor Ort umgesetzt und Patenschaften für Gebiete übernommen. Expeditionsreisen vermitteln die einzigartige Vielfalt ursprünglicher Natur und die Notwendigkeit, sie zu erhalten. Mit Hilfe von Umweltstipendien erkunden junge Menschen die bedrohten Regionen und werden so zu Botschaftern der Wildnis." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Stiftung Wilderness International" ;
+    foaf:fax "0341 2353629" ;
+    foaf:homepage "www.wilderness–international.org" ;
+    foaf:mbox "kontakt@wilderness-international.org" ;
+    foaf:phone "0351 31402220" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Technisch_%C3%B6kologisches_Jugendprojektzentrum_Rabutz>
+    mint2014:category "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04509.Wiedemar.Bageritzer.Weg.1> ;
+    mint2014:leistungsangebot "Es werden den Schulen Arbeitsgemeinschaften, Projektwochen und Ferienveranstaltungen zu technisch ökologischen Themen angeboten.", "Fortbildungsangebote speziell für Lehrer/-innen zur Projektpädagogik", "Für Gruppen besteht Übernachtungsmöglichkeit und Vollverpflegung nach dem Prinzip der Vollwertkost.", "Gestaltung des Verkehrsablaufes mit der Solar-Gartenbahn", "Im Minidorf (M 1:10) kann das Leben der Bauern vor 100 Jahren nachgestaltet werden.", "Im Verkehrsgarten ist es möglich, Verkehrsführung und -organisation selbst zu gestalten.", "mehrtägige Boden- und Wasseruntersuchungen, Beobachtungen der Tier- und Pflanzenwelt mit dem Umwelt-Erkundungsfahrzeug" ;
+    mint2014:oeffnungszeiten "täglich von 14:00 –18:00 Uhr; andere Zeiten nach Absprache" ;
+    mint2014:oepnv "S-Bahn nach Gröbers, dann mit dem Fahrrad nach Rabutz (5 km)" ;
+    dcterms:description "Das TÖP Rabutz arbeitet seit 1996 daran, mit Schüler/-innen Technik zu entwickeln, die sehr umweltverträglich ist. Alle Fahrzeuge haben E-Antrieb und werden von einer selbst entwickelten Solaranlage mit Energie versorgt. Das Abwasser aus dem Solarcafé und den Toiletten wird vollbiologisch gereinigt und im Kreislauf als Brauchwasser wieder genutzt. Alle diese Anlagen werden von den Schüler/-innen betreut und überwacht." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Technisch ökologisches Jugendprojektzentrum Rabutz" ;
+    foaf:fax "034207 73597" ;
+    foaf:homepage " www.rennstall-rabutz.de" ;
+    foaf:mbox "drelk@rennstall-rabutz.de" ;
+    foaf:phone "034207 73595" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Umweltbibliothek_Leipzig>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04277.Leipzig.Bernhard-G%C3%B6ring-Stra%C3%9Fe.152> ;
+    mint2014:leistungsangebot "20.000 Sach- und Fachmedien für Studierende, Lernende, Lehrende, im Umweltschutz Tätige in Vereinen, Behörden und Planungsbüros sowie für Privatpersonen", "Arbeitsplätze, Internetzugang, Kopierer", "Erschließung umweltbezogener Informationsangebote im Internet", "Unterstützung bei der aufgabenbezogenen Recherche und Medienauswahl", "Vermittlung von Umweltberatungs- und Umweltbildungsangeboten", "eigene Internetseiten, u. a. mit dem kompletten Bestandskatalog, Umweltschutzadressen" ;
+    mint2014:oeffnungszeiten "Mo bis Do 9:00 – 18:00 Uhr, Fr 9:00 – 12:00 Uhr" ;
+    mint2014:oepnv "Straßenbahn Linien 9, 10, 11, Bus Linien 70, 89, 107 alle bis Haltestelle Connewitz Kreuz" ;
+    dcterms:description "Die Umweltbibliothek Leipzig des Ökolöwen wurde 1988 gegründet. Als unbeschränkt öffentlich und kostenfrei zugängliche Spezialbibliothek versteht sie sich als ein zentraler Informationsdienstleister im Bereich Umweltschutz in der Stadt Leipzig und ihrem Umland. Sie kooperiert mit lokalen und besonders relevanten überregionalen Informationsanbietern, wie Behörden, Vereinen, Forschungseinrichtungen, Stadt- und Hochschulbibliotheken, um deren Informationen zur (regionalen) Umweltsituation und Umweltschutzmaßnahmen konzentriert zu sammeln, zu erschließen und anzubieten und um als qualifizierte Ergänzung zu deren Angeboten zu fungieren." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Umweltbibliothek Leipzig" ;
+    foaf:fax "0341 3065179" ;
+    foaf:homepage "www.umweltbibliothek-leipzig.de" ;
+    foaf:mbox "info@umweltbibliothek-leipzig.de" ;
+    foaf:phone "0341 3065180" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Umweltinformationszentrum_des_Amtes_für_Umweltschutz_der_Stadt_Leipzig>
+    mint2014:category "Berufsorientierung", "Naturwissenschaften", "Technik", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04317.Leipzig.Prager.Stra%C3%9Fe.118–136.Haus.A.II> ;
+    mint2014:leistungsangebot "Auch andere Ämter der Stadt Leipzig halten Informationen mit Umweltbezug bereit.", "Das Amt für Umweltschutz der Stadt Leipzig lädt herzlich ein, die verschiedenen Informationsmöglichkeiten im Ladengeschäft der Fußgängerzone im Technischen Rathaus zu nutzen.", "Neben den Beratungen, dem kostenlosen Informationsmaterial und der Entgegennahme von Bürgerhinweisen, werden Veranstaltungen wie wechselnde Ausstellungen, Fachsprechstunden, Exkursionen oder Foren angeboten.", "Schülerpraktika", "Weitere und zusätzliche Angebote für Schulen auf Nachfrage und mit Detailabsprachen in Abhängigkeit der Kapazitäten." ;
+    mint2014:oeffnungszeiten "Di und Do 10:00 –12:00 Uhr und 14:00 –17:00 Uhru nd nach Vereinbarung" ;
+    mint2014:oepnv "Straßenbahn Linien 12, 15 und Bus 70, 74 bis Haltestelle „Technisches Rathaus“, Straßenbahn Linie 2 bis Haltestelle „Dt. Nationalbibliothek“" ;
+    dcterms:description "Das Umweltinformationszentrum (UiZ), als Einrichtung des Amtes für Umweltschutz, ist ein Beratungs-, Informations- und Kommunikationszentrum für Bürger/-innen, Gäste und Bildungseinrichtungen der Stadt Leipzig und informiert über Leipziger und überegionale Umweltthemen." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "UiZ" ;
+    skos:prefLabel "Umweltinformationszentrum des Amtes für Umweltschutz der Stadt Leipzig" ;
+    foaf:fax "0341 1231655" ;
+    foaf:homepage "www.leipzig.de/uiz" ;
+    foaf:mbox "uiz@leipzig.de" ;
+    foaf:phone "0341 1236711" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/VDI_–_GaraGe_gemeinn%C3%BCtzige_GmbH>
+    mint2014:category "Berufsorientierung", "Informatik", "Naturwissenschaften", "Technik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04229.Leipzig.Karl-Heine-Stra%C3%9Fe97> ;
+    mint2014:leistungsangebot "Die VDI – GaraGe stellt ca. 120 Lehr- und Lernprogramme zur technischen, naturwissenschaftlichen, informatorischen und technischen Bildung für alle Bildungsprofile und Altersgrupen zur Verfügung. Sie setzt mit Kooperationschulen im Bereich der SBAL und mit Unterstützung der Arbeitsagenturen, der Stadt Leipzig, von Stiftungen und von Unternehmen Programme zur technischen Bildung sowie zur Berufs- und Studienorintierung um.", "Schülerpraktika, Museumsnacht", "Unterstützung von Weiterbildungsangeboten für Lehrer/-innen im Rahmen MINT Leipzig; Themenbezogene Fortbildungsangebote auf Anfrage" ;
+    mint2014:oeffnungszeiten "Voranmeldung für alle Angebot notwendig. Durchführung der Kurse in Abstimmung mit den Nutzer/-innen." ;
+    mint2014:oepnv "Straßenbahn Linie 14 Richtung Plagwitz, Haltestelle „Gießerstraße“" ;
+    dcterms:description "Die VDI – GaraGe gemeinnützige GmbH gehört zur VDI-Gruppe und ist eine eigenständige, autonome Einrichtung, deren Leistungen und Praxisfelder die Defizite von Schule und Berufsausbildung über ein gänzlich neues, integratives Angebot kompensieren und zu einem innovativen Lösungsweg verbindet. Sie gilt als ein Modell für die neuartige Vermittlung von Kompetenzen in den Bereichen Technik, Naturwissenschaften und Wirtschaft in der Zielgruppe der Kinder und Jugendlichen." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "VDI – GaraGe gemeinnützige GmbH" ;
+    foaf:fax "0341 87086-10" ;
+    foaf:homepage "www.g-a-r-a-g-e.biz" ;
+    foaf:mbox "kontakt@g-a-r-a-g-e.biz" ;
+    foaf:phone "0341 87086-0" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Vogelschutzlehrst%C3%A4tte>
+    mint2014:category "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04299.Leipzig.Am.K%C3%A4rrnerweg.12.A> ;
+    mint2014:leistungsangebot "In der Vogelschutzstätte erfahren Kinder und Jugendliche mehr über die Lebensräume von Vögeln sowie Möglichkeiten, diese Tiere zu schützen und bietet gute Gelegenheiten, Wissen mit Erlebnissen anzureichern." ;
+    mint2014:oeffnungszeiten "nach telefonischer Absprache April bis Oktober jeden Sonntag von 9:00 –12:00 Uhr (außer feiertags)" ;
+    mint2014:oepnv "Straßenbahn Linie 4 bis Endstelle Stötteritz;Bus 74 Haltestelle Holzhäuser Straße" ;
+    dcterms:description "Die Einrichtung in der Kleingartenanlage „Am Kärrnerweg“ in Leipzig Stötteritz ist eine traditionelle Lehr- und Schaustätte für den aktiven Vogelschutz inklusive Vogelhain mit Naturlehrpfad und Teich." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "Stadtverband Leipzig der Kleingärtner e.V. (Träger)" ;
+    skos:prefLabel "Vogelschutzlehrstätte" ;
+    foaf:fax "0341 4774306" ;
+    foaf:homepage "www.vogelschutz-leipzig.de" ;
+    foaf:mbox "info@leipziger-kleingaertner.de" ;
+    foaf:phone "0341 4772753" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Volkshochschule_Leipzig>
+    mint2014:category "Informatik", "Mathematik", "Naturwissenschaften", "Technik" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04105.Leipzig.L%C3%B6hrstra%C3%9Fe.3-7> ;
+    mint2014:leistungsangebot "Die VHS unterbreitet Bildungsangebote zur allseitigen und beruflichen Entwicklung, interessante Freizeitangebote und Möglichkeiten, andere Menschen, ihre Ideen und Erfahrungen kennen zu lernen.", "Schülerpraktika", "Tag der offenen Tür", "Themenangebote sind: Politik, Gesellschaft, Umwelt, Pädagogik, Psychologie, Philosophie, Kulturelle Bildung, Kreativität, Freizeit, Gesundheit, Gesunde Ernährung/Kochen, Sprachen, Berufliche Bildung, Computer, Internet, Neue Medien, Stadtteilangebote" ;
+    mint2014:oeffnungszeiten "Mo, Di, Do 10:00 –12:30 Uhr und 13:30 –18:00 Uhr, Fr 10:00 –12:30 Uhr, Mi geschlossen; Anmeldung: Telefon 0341 1236000 oder www.vhs-leipzig.de; VHS in Grünau: Stuttgarter Allee 19; Mo, Di, Do 10:00 –17:30 Uhr, Mi 10:00 –16:00 Uhr; Telefon 0341 2304583. VHS in Paunsdorf mit Mölkau, Liebertwolkwitz und Holzhausen: Wiesenstraße 14; Telefon 0341 123 6000" ;
+    mint2014:oepnv " Straßenbahn Linien 1, 3, 4, 7, 9, 12, 14, 15, bis Goerdelerring; Bus 72 und 73, bis Hauptbahnhof" ;
+    dcterms:description "Volkshochschule Leipzig – Kommunales Weiterbildungszentrum für alle Leipziger/-innen. Die VHS steht für lebensbegleitendes Lernen, vielfältige Bildungsangebote, für die Verbindung von Bildung, Kommunikation und Erlebnis sowie individuelle Beratung, kompetenten Service und sozialverträgliche Entgelte." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Volkshochschule Leipzig" ;
+    foaf:fax "0341 1236031" ;
+    foaf:homepage "www.vhs-leipzig.de" ;
+    foaf:mbox "vhs@leipzig.de" ;
+    foaf:phone "0341 1236000" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Wildpark>
+    mint2014:category "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04277.Leipzig.Berhard-G%C3%B6ring-Stra%C3%9F.161%0D%0A> ;
+    mint2014:leistungsangebot "Führungen, Exkursionen, Unterricht im Grünen, Wandertage, Projekttage", "Ganztagsangebot „Forschen mit Willi“, Konzept auf unserer Internetseite", "Große Wildparkrallye, Kosten 5 € pro Teilnehmer/-in, aber mindestens 50 €", "Kindergeburtstage, Festtage", "lehrplanorientierte Vorträge und Exkursionen an und im Umfeld von Schulen und sozialen Einrichtungen" ;
+    mint2014:oeffnungszeiten "16. März bis 31. Oktober täglich 9:00 –19:00 Uhr, 1. November bis 15. März täglich 9:00 –17:00 Uhr" ;
+    mint2014:oepnv "Straßenbahn Linie 9, Richtung Markkleeberg; Bus 107, Richtung Zöbiger; Haltestelle Wildpark" ;
+    dcterms:description "Der Wildpark Leipzig ist nunmehr seit 1904 Zentrum für Erholung, Forschung und die Erhaltung bedrohter einheimischer Wildtierarten. Darüber hinaus erfüllt er auch eine wichtige Bildungsfunktion, stellt er doch eine ideale Schnittstelle zwischen Natur und Kultur dar. Das Leben von Wildtieren wird hier, inmitten einer Großstadt, erlebbar gemacht. Der Wildparkverein hat sich die praxisbezogene Bildung im Wildpark und dem Leipziger Auwald auf die Fahne geschrieben." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "Verein der Freunde und Förderer des Wildparks Leipzig e.V." ;
+    skos:prefLabel "Wildpark" ;
+    foaf:fax "0341 26378001" ;
+    foaf:homepage "www.wildparkverein-leipzig.de" ;
+    foaf:mbox "info@wildparkverein-leipzig.de" ;
+    foaf:phone "0341 26496004" .
+
+<http://leipzig-data.de/Data/MINT-2014/Ort/Zooschule_im_Zoo_Leipzig>
+    mint2014:category "Naturwissenschaften", "Umweltbildung" ;
+    mint2014:hasAddress <http://leipzig-data.de/Data/MINT-2014/04105.Leipzig.Pfaffendorfer.Stra%C3%9Fe.29> ;
+    mint2014:leistungsangebot "Entwicklung und Erprobung von Schüler- und Lehrermaterialien für den Lernort Zoo Leipzig", "Fortbildungen für Lehrer/-innen", "Fortbildungsangebote siehe Fortbildungskatalog der Sächsischen Bildungsagentur", "Lehrplanorientierter, fachübergreifender und fächerverbindender Zooschulunterricht", "Unterrichtszeit je nach Themenbereich zwischen 2,5 und 4 Stunden", "Unterstützung pädagogischer Angebote der Zoo Leipzig GmbH" ;
+    mint2014:oeffnungszeiten "an allen sächsischen Schultagen; Anmeldungen werden in der Regel per E-Mail vereinbart" ;
+    mint2014:oepnv "Straßenbahnlinie 12, Haltestelle Zoo" ;
+    dcterms:description "Die Unterrichtsangebote der Zooschule im Zoo Leipzig tragen dazu bei, Erfahrungen mit der Vielfalt und Einzigartigkeit der Natur zu sammeln und ein Bewusstsein für die Notwendigkeit des Schutzes und eines verantwortungsvollen Umgangs mit der natürlichen Umwelt zu entwickeln. Entlang der Leitfächer Biologie bzw. Sachunterricht wird fachübergreifend und fächerverbindend unterrichtet. Zooschulunterricht greift inhaltliche Lehrplanvorgaben des Regelschulwesens auf. Auf entdeckende und handlungsorientierte Weise schulen sich die Kinder und Jugendlichen durch gezielte Beobachtungen im außerschulischen Lernort Zoo. Im Zentrum steht die  Tierbeobachtung. Neben dem Wissenserwerb steht die Förderung allgemeiner Fähigkeiten und Fertigkeiten. Schulen und Schulkassen können die Zooschulangebote in ihren Projektunterricht integrieren. Dabei werden auch die Hauptanliegen des Weltzooverbandes (WAZA) aufgegriffen." ;
+    a mint2014:Ortsbeschreibung ;
+    skos:altLabel "" ;
+    skos:prefLabel "Zooschule im Zoo Leipzig" ;
+    foaf:fax "" ;
+    foaf:homepage "www.zoo-leipzig.de" ;
+    foaf:mbox "zooschule@zoo-leipzig.de" ;
+    foaf:phone "0341 5933396" .
+
+mint2014:Ortsbeschreibung
+    a owl:Class ;
+    rdfs:comment "Die Klasse von verschiedenen Orten" ;
+    rdfs:label "Ort" .
+
+<http://leipzig-data.de/Data/MINTBroschuere2014/>
+    cc:attributionName "The Leipzig Open Data Project" ;
+    cc:attributionURL <http://leipzig-data.de> ;
+    cc:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    a owl:Ontology ;
+    rdfs:comment "Aufnahme der MINT-Broschüre 2014 aus der pdf-Quelle" ;
+    rdfs:label "MINT-Broschüre 2014" .
+

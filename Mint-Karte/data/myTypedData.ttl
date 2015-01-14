@@ -175,7 +175,7 @@ Haltestelle Münzgasse""" ;
 																
 <http://localhost/OntoWiki/Mint2014/Ort/Fakult%C3%A4t_f%C3%BCr_Physik_und_Geowissenschaften_der_Universit%C3%A4t_Leipzig> <http://localhost/OntoWiki/Mint2014/Property/category> "Naturwissenschaften", "Technik", "Berufsorientierung" ;
 																<http://localhost/OntoWiki/Mint2014/Property/fax> "" ;
-																<http://localhost/OntoWiki/Mint2014/Property/hasAddress> <http://localhost/OntoWiki/Mint2014/04103.Leipzig.Linn%C3%A9stra%C3%9Fe.5">,                                                                    <http://localhost/OntoWiki/Mint2014/04103.Leipzig.Johannisallee.19a> ;
+																<http://localhost/OntoWiki/Mint2014/Property/hasAddress> <http://localhost/OntoWiki/Mint2014/04103.Leipzig.Linn%C3%A9stra%C3%9Fe.5>,                                                                    <http://localhost/OntoWiki/Mint2014/04103.Leipzig.Johannisallee.19a> ;
 																<http://localhost/OntoWiki/Mint2014/Property/homepage> "" ;
 																<http://localhost/OntoWiki/Mint2014/Property/leistungsangebot> "Fortbildungsangebote: Lehrerweiterbildung und Angebote SCHILF", "Sonstige Angebote: Sonntagsvorlesung (Ankündigung über Internet und Schulverteiler), Lange Nacht der Wissenschaften, Inspirata, Experinat, Weihnachtsvorlesung, Kinderuniversität,  Fachkolloquia, Betreuung von Besonderen Lernleistungen (BeLL), Laborbesichtigungen", "Tag der offenen Tür: 1. Donnerstag im Januar" ;
 																<http://localhost/OntoWiki/Mint2014/Property/mail> "schiele@physik.uni-leipzig.de" ;
@@ -425,7 +425,7 @@ Haltestelle Münzgasse""" ;
 																rdfs:label "Ökolöwe – Umweltbund Leipzig e.V." ;
 																<http://www.w3.org/2004/02/skos/core#altLabel> "" .
 																
-<http://localhost/OntoWiki/Mint2014/Ort/%C3%96kol%C3%B6we_–_Umweltbund_Leipzig_eV_ Leipzig_naturnah> <http://localhost/OntoWiki/Mint2014/Property/category> "Naturwissenschaften", "Umweltbildung" ;
+<http://localhost/OntoWiki/Mint2014/Ort/%C3%96kol%C3%B6we_-_Umweltbund_Leipzig_eV_Leipzig_naturnah> <http://localhost/OntoWiki/Mint2014/Property/category> "Naturwissenschaften", "Umweltbildung" ;
 																<http://localhost/OntoWiki/Mint2014/Property/fax> "0341 3065179" ;
 																<http://localhost/OntoWiki/Mint2014/Property/hasAddress> <http://localhost/OntoWiki/Mint2014/04277.Leipzig.Kohrener%2FBurgst%C3%A4dter.Stra%C3%9Fe> ;
 																<http://localhost/OntoWiki/Mint2014/Property/homepage> "www.ökolöwe.de/leipzignaturnah.html" ;
@@ -523,7 +523,7 @@ Haltestelle Münzgasse""" ;
 																rdfs:label "Stadt.Name.Land" ;
 																<http://www.w3.org/2004/02/skos/core#altLabel> "" .
 																
-<http://localhost/OntoWiki/Mint2014/Ort/Stiftung.Wilderness.International> <http://localhost/OntoWiki/Mint2014/Property/category> "Naturwissenschaften", "Umweltbildung ;
+<http://localhost/OntoWiki/Mint2014/Ort/Stiftung.Wilderness.International> <http://localhost/OntoWiki/Mint2014/Property/category> "Naturwissenschaften", "Umweltbildung" ;
 																<http://localhost/OntoWiki/Mint2014/Property/fax> "0341 2353629" ;
 																<http://localhost/OntoWiki/Mint2014/Property/hasAddress> <http://localhost/OntoWiki/Mint2014/04318.Leipzig.Permoserstra%C3%9Fe.15> ;
 																<http://localhost/OntoWiki/Mint2014/Property/homepage> "www.wilderness–international.org" ;
