@@ -886,7 +886,7 @@ jsp:Ort
 <http://leipzig-data.de/Data/Jugendstadtplan/Ort/Der_Anker_eV>
     jsp:Art jsp:Jugendzentrum ;
     jsp:Musikrichtung jsp:Charts, jsp:ElektronischeMusik, <http://leipzig-data.de/Data/Jugendstadtplan/Musikrichtung/AlternativeRock>, <http://leipzig-data.de/Data/Jugendstadtplan/Musikrichtung/WaveGothic> ;
-    jsp:describes ldo:Anke ;
+    jsp:describes ldo:Anker ;
     jsp:hasOpeningHours "Mo (14:00-20:00), Di (14:00-20:00), Mi (14:00-20:00), Do (14:00-20:00), Fr (14:00-20:00), Sa (14:00-20:00)" ;
     jsp:hasdescription "Der \"Anker\" ist ein soziokulturelles Zentrum im Norden der Stadt. Neben einem reichhaltigen Kursangebot gibt es einen offenen Jugendtreff und Konzerte."@de ;
     jsp:suppliedBy jsp:Max ;
