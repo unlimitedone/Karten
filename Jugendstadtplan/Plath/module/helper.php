@@ -23,8 +23,8 @@ ini_set('default_charset', 'utf-8');
 function validateLanguage($language)
 {
     global $settings;
-	$lang = "de";
-	switch ($language) {
+    $lang = "de";
+    switch ($language) {
         case "de":
             $lang = "de";
             break;
@@ -34,9 +34,6 @@ function validateLanguage($language)
         default:
             $lang = $settings["defaultLanguage"];
     }
-	return $lang;
+    return $lang;
 }
 ?>
-
-
-

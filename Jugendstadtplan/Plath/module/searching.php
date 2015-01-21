@@ -11,6 +11,7 @@
 include_once "../config/config.php";
 include_once "helper.php";
 require_once "../vendor/autoload.php";
+require_once "graphLoader.php";
 
 // output settings
 //=========================
@@ -23,26 +24,13 @@ ini_set('default_charset', 'utf-8');
 // return: html contains all categories
 function searchByUri($search, $lang)
 {
-	// set rdf namespace
-    EasyRdf_Namespace::set('ldo', 'http://leipzig-data.de/Data/Ort/');
-    EasyRdf_Namespace::set('ldp', 'http://leipzig-data.de/Data/Person/');
-    EasyRdf_Namespace::set('ldtag', 'http://leipzig-data.de/Data/Tag/');
-    EasyRdf_Namespace::set('ld', 'http://leipzig-data.de/Data/Model/');
-    EasyRdf_Namespace::set('owl', 'http://www.w3.org/2002/07/owl#');
-    EasyRdf_Namespace::set('sysont', 'http://ns.ontowiki.net/SysOnt/');
-    EasyRdf_Namespace::set('xsd', 'http://www.w3.org/2001/XMLSchema#');
-    EasyRdf_Namespace::set('jsp1', 'http://localhost/jsp/');
-    EasyRdf_Namespace::set('jsp', 'http://leipzig-data.de/Data/Jugendstadtplan/');
-    EasyRdf_Namespace::set('geo', 'http://www.w3.org/2003/01/geo/wgs84_pos#');
-	
 	// search results 
 	$searchResults = array();
 	// count search results
 	$CountSearchResults = 0;
-	// url to rdf data
-    $docuri = "http://leipzig-data.de/Jugendstadtplan/Emanuel/Data/unsere_data_1.json";
 	// load rdf graph
-    $graph = EasyRdf_Graph::newAndLoad($docuri);
+	$rdfGraph = new RdfGraph(array("../data/rdf/jugendstadtplan.json"));
+	$graph = $rdfGraph->getGraph();
 	// validate requested language
 	$lang = validateLanguage($lang);
 	// start search in graph

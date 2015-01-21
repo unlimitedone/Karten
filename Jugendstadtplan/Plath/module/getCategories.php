@@ -10,6 +10,7 @@ include_once "../config/config.php";
 include_once "translate.php";
 include_once "html.php";
 require_once "../vendor/autoload.php";
+require_once "graphLoader.php";
 
 // output settings
 //=========================
@@ -23,24 +24,13 @@ ini_set('default_charset', 'utf-8');
 // return: html contains all categories
 //=========================
 function getCategories($lang, $categOne, $categTwo)
-{
-    // set RDF namespaces
-    EasyRdf_Namespace::set('ldo', 'http://leipzig-data.de/Data/Ort/');
-    EasyRdf_Namespace::set('ldp', 'http://leipzig-data.de/Data/Person/');
-    EasyRdf_Namespace::set('ldtag', 'http://leipzig-data.de/Data/Tag/');
-    EasyRdf_Namespace::set('ld', 'http://leipzig-data.de/Data/Model/');
-    EasyRdf_Namespace::set('sysont', 'http://ns.ontowiki.net/SysOnt/');
-    EasyRdf_Namespace::set('xsd', 'http://www.w3.org/2001/XMLSchema#');
-    EasyRdf_Namespace::set('jsp1', 'http://localhost/jsp/');
-    EasyRdf_Namespace::set('jsp', 'http://leipzig-data.de/Data/Jugendstadtplan/');
-    
+{  
     // parse rdf graph
 	$menuCategories = "";
 	$categoriesContent = "";
-    // uri for RDF file
-    $docuri1        = "http://leipzig-data.de/Jugendstadtplan/Emanuel/Data/unsere_data_1.json";
-    // load graph via uri
-    $graph1         = EasyRdf_Graph::newAndLoad($docuri1);
+	// load full graph
+	$rdfGraph = new RdfGraph(array("../data/rdf/jugendstadtplan.json"));
+	$graph1 = $rdfGraph->getGraph();
     // count avaiable categories ($count = 2 because first two categories are static)
     $count          = 2;
     // contains alle categories

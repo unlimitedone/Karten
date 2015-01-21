@@ -9,6 +9,7 @@
 include_once "../config/config.php";
 include_once "translate.php";
 require_once "../vendor/autoload.php";
+require_once "graphLoader.php";
 
 // ouput settings
 //=========================
@@ -22,20 +23,9 @@ ini_set('default_charset', 'utf-8');
 //=========================
 function getLocationDetails($uri, $language)
 {
-    // Set RDF namespaces
-	EasyRdf_Namespace::set('ldo', 'http://leipzig-data.de/Data/Ort/');
-    EasyRdf_Namespace::set('ldp', 'http://leipzig-data.de/Data/Person/');
-    EasyRdf_Namespace::set('ldtag', 'http://leipzig-data.de/Data/Tag/');
-    EasyRdf_Namespace::set('ld', 'http://leipzig-data.de/Data/Model/');
-    EasyRdf_Namespace::set('sysont', 'http://ns.ontowiki.net/SysOnt/');
-    EasyRdf_Namespace::set('xsd', 'http://www.w3.org/2001/XMLSchema#');
-    EasyRdf_Namespace::set('jsp1', 'http://localhost/jsp/');
-    EasyRdf_Namespace::set('jsp', 'http://leipzig-data.de/Data/Jugendstadtplan/');
-    
-	// path to full rdf file
-    $docuri = "http://leipzig-data.de/Jugendstadtplan/Emanuel/Data/unsere_data_1.json";
     // load full graph
-	$graph = EasyRdf_Graph::newAndLoad($docuri);
+	$rdfGraph = new RdfGraph(array("../data/rdf/jugendstadtplan.json"));
+	$graph = $rdfGraph->getGraph();
     // requested uri path
 	$requested_res = $uri;
 	// load language data
