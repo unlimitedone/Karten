@@ -8,7 +8,10 @@
 	var map = L.map('map').setView([51.3400, 12.3800], 13);
 
 	// get to map data from map-data provider (Mapbox)
-	L.tileLayer('http://{s}.tiles.mapbox.com/v3/unlimitedone.k3inkm7m/{z}/{x}/{y}.png', {
+	// old v3 api access way
+	//L.tileLayer('http://{s}.tiles.mapbox.com/v3/unlimitedone.k3inkm7m/{z}/{x}/{y}.png', {
+	// use new api v4 to access map data
+	L.tileLayer('http://api.tiles.mapbox.com/v4/unlimitedone.k3inkm7m/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoidW5saW1pdGVkb25lIiwiYSI6ImNBRlZXSHcifQ.abiM9uDEj2zyQC6nFFsC3w', {
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		maxZoom: 18
 	}).addTo(map);
