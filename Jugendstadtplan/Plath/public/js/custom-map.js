@@ -20,7 +20,7 @@
 
     var map;
     var JSONFile = "data/jugendstadtplan.json";
-    var lang = "de";
+    var lang = getUserLanguage();
 
 	// Data processing done down here
 

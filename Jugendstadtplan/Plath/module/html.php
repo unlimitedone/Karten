@@ -239,10 +239,10 @@ function pageFooter($copyright, $copyrightdate)
     ================================================== -->
 	<!-- Include Map JS -->
 	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-	<!-- Custom JS Settings for Map -->
-	<script src="js/custom-map.js"></script>
 	<!-- Helper JS Functions -->
 	<script src="js/helper.js"></script>
+	<!-- Custom JS Settings for Map -->
+	<script src="js/custom-map.js"></script>
 	
   </body>
 </html>';

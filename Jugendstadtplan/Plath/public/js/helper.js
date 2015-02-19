@@ -93,7 +93,15 @@ function addLocation(jsp_uri, label, lat, lng, lang) {
 // get user language
 //==========================================
 function getUserLanguage() {
-	var language = document.getElementById("languageStore").innerHTML;
+	// get user language from inline html
+	//var language = document.getElementById("languageStore").innerHTML;
+	// or get user language via url param "lang"
+	var language = getParamFromURL("lang");
+	// fallback to default language if no param is found
+	if(language == false){
+		language = "de";
+	}
+	console.log(language);
 	return language;
 }
 
@@ -112,4 +120,17 @@ function setFocusToMarker(uri) {
     map.panTo([allmarker[uri][1], allmarker[uri][2]]);
     //PopUp öffnen
     allmarker[uri][0].openPopup();
+}
+
+// get params from URL
+//==========================================
+function getParamFromURL(param)
+{
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == param){return pair[1];}
+    }
+    return(false);
 }
